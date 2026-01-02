@@ -1,0 +1,71 @@
+{
+  "target_institution": {
+    "name": "University of Oulu",
+    "country": "Finland",
+    "credit_system": "ECTS",
+    "academic_calendar": {
+      "terms": ["Autumn", "Spring"],
+      "teaching_periods": ["P1", "P2", "P3", "P4"]
+    }
+  },
+
+  "target_course": {
+    "code": "805305A",
+    "name": "Introduction to Regression and Analysis of Variance",
+    "credits": 5,
+    "level": "Intermediate Studies",
+    "faculty": "Faculty of Science",
+    "degree_programs": [
+      "Mathematical Sciences",
+      "Data Science"
+    ],
+    "language_of_instruction": "Finnish",
+    "delivery_mode": [
+      "Lectures",
+      "Practicals",
+      "Independent work"
+    ],
+    "assessment_methods": [
+      "Final exam",
+      "Homework and practical exercises"
+    ],
+    "grading_scale": "0–5 / FAIL",
+    "teaching_period": ["Autumn P2"],
+
+    "course_description": "Introduction to linear regression and analysis of variance models with emphasis on statistical modelling, parameter estimation, diagnostics, and practical implementation using R.",
+
+    "learning_outcomes": [
+      "Describe principles of regression and variance analysis",
+      "Formulate regression and ANOVA models",
+      "Estimate model parameters using least squares",
+      "Interpret model parameters and predictions",
+      "Apply regression and ANOVA to small data sets using R"
+    ],
+
+    "core_topics": {
+      "signal_representations": [],
+      "transform_methods": [],
+      "systems": [],
+      "frequency_analysis": [],
+      "sampling_and_modulation": [],
+      "filtering": [],
+      "feedback_and_stability": []
+    },
+
+    "recommended_literature": [],
+
+    "prerequisites": {
+      "required": [
+        "Introduction to Statistics or equivalent"
+      ],
+      "recommended": []
+    }
+  },
+
+  "metadata": {
+    "data_status": "Extracted",
+    "last_updated": "2026-01-02",
+    "source": "University of Oulu course description",
+    "confidence_level": "High"
+  }
+}

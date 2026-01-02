@@ -1,0 +1,65 @@
+{
+  "target_institution": {
+    "name": "University of Oulu",
+    "country": "Finland",
+    "credit_system": "ECTS",
+    "academic_calendar": {
+      "terms": ["Autumn", "Spring"],
+      "teaching_periods": ["P1", "P2", "P3", "P4"]
+    }
+  },
+
+  "target_course": {
+    "code": "766301A",
+    "name": "Introduction to Computational Physics",
+    "credits": 5,
+    "level": "Intermediate Studies",
+    "faculty": "Faculty of Science",
+    "degree_programs": ["Physics"],
+    "language_of_instruction": "Finnish",
+    "delivery_mode": [
+      "Computer exercises",
+      "Independent study"
+    ],
+    "assessment_methods": [
+      "Final exercise",
+      "Practical assignments"
+    ],
+    "grading_scale": "0–5 / FAIL",
+    "teaching_period": ["Spring P3"],
+
+    "course_description": "Introduction to numerical tools and computational methods used in physics, focusing on problem formulation, numerical solution, and visualization using Python.",
+
+    "learning_outcomes": [
+      "Understand general numerical tools used in physics",
+      "Formulate and solve basic numerical problems in physics",
+      "Apply numerical integration and differentiation methods",
+      "Develop simple simulations using Python",
+      "Apply basic data visualization techniques"
+    ],
+
+    "core_topics": {
+      "signal_representations": [],
+      "transform_methods": [],
+      "systems": [],
+      "frequency_analysis": [],
+      "sampling_and_modulation": [],
+      "filtering": [],
+      "feedback_and_stability": []
+    },
+
+    "recommended_literature": [],
+
+    "prerequisites": {
+      "required": ["Basic Python programming"],
+      "recommended": []
+    }
+  },
+
+  "metadata": {
+    "data_status": "Extracted",
+    "last_updated": "2026-01-02",
+    "source": "University of Oulu course description",
+    "confidence_level": "High"
+  }
+}
