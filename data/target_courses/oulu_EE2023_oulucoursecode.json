@@ -1,0 +1,193 @@
+{
+  "target_institution": {
+    "name": "University of Oulu",
+    "country": "Finland",
+    "credit_system": "ECTS",
+    "academic_calendar": {
+      "terms": ["Autumn", "Spring"],
+      "teaching_periods": ["P1", "P2", "P3", "P4"]
+    }
+  },
+
+  "target_course": {
+    "code": "EE3XX1",
+    "name": "Signals and Systems",
+    "credits": 5,
+    "level": "Bachelor (intermediate core)",
+    "faculty": "Faculty of Information Technology and Electrical Engineering",
+    "degree_programs": [
+      "Electrical Engineering",
+      "Information Processing Science",
+      "Communications Engineering"
+    ],
+    "language_of_instruction": "English",
+    "delivery_mode": [
+      "Lectures",
+      "Exercise sessions",
+      "Computer-based assignments"
+    ],
+    "assessment_methods": [
+      "Written examination",
+      "Weekly problem sets",
+      "Signal analysis assignments"
+    ],
+    "grading_scale": "0–5",
+    "teaching_period": ["Autumn P2", "Spring P3"],
+
+    "course_description": "Introduction to continuous-time and discrete-time signals and systems with emphasis on mathematical modeling, transform methods, and system analysis relevant to electrical and communications engineering.",
+
+    "learning_outcomes": [
+      "Analyze continuous-time and discrete-time signals in time and frequency domains",
+      "Apply Fourier series, Fourier transform, and Laplace transform to signals and systems",
+      "Model Linear Time-Invariant (LTI) systems using convolution and transfer functions",
+      "Interpret frequency response and system behavior using Bode plots",
+      "Understand sampling, filtering, and modulation fundamentals",
+      "Evaluate system stability and feedback behavior"
+    ],
+
+    "core_topics": {
+      "signal_representations": [
+        "Continuous-time signals",
+        "Discrete-time signals",
+        "Energy and power signals"
+      ],
+      "transform_methods": [
+        "Fourier series",
+        "Fourier transform",
+        "Laplace transform",
+        "Z-transform (introductory)"
+      ],
+      "systems": [
+        "Linear Time-Invariant (LTI) systems",
+        "Impulse response",
+        "Convolution",
+        "Transfer functions"
+      ],
+      "frequency_analysis": [
+        "Frequency response",
+        "Bode diagrams",
+        "Magnitude and phase analysis"
+      ],
+      "sampling_and_modulation": [
+        "Sampling theorem",
+        "Aliasing",
+        "Amplitude modulation basics"
+      ],
+      "filtering": [
+        "Low-pass filters",
+        "High-pass filters",
+        "Basic filter design principles"
+      ],
+      "feedback_and_stability": [
+        "Feedback systems",
+        "Stability concepts (introductory)"
+      ]
+    },
+
+    "recommended_literature": [
+      {
+        "title": "Signals and Systems",
+        "authors": ["A. V. Oppenheim", "A. S. Willsky"],
+        "type": "Primary textbook"
+      },
+      {
+        "title": "Linear Systems and Signals",
+        "authors": ["B. P. Lathi"],
+        "type": "Supplementary"
+      }
+    ],
+
+    "prerequisites": {
+      "required": [
+        "Calculus I–II",
+        "Linear Algebra",
+        "Differential Equations"
+      ],
+      "recommended": [
+        "Introduction to Programming",
+        "Basic Circuit Theory"
+      ]
+    }
+  },
+
+  "transfer_mapping": {
+    "source_course_reference": "EE2023",
+    "credit_conversion": {
+      "source_units": "4 Units",
+      "target_ects": 5,
+      "conversion_rationale": "Comparable workload and contact hours; ECTS includes independent study"
+    },
+
+    "topic_alignment": {
+      "strong_alignment": [
+        "Fourier series and Fourier transform",
+        "Laplace transform",
+        "LTI systems",
+        "Convolution",
+        "Frequency response and Bode diagrams"
+      ],
+      "partial_alignment": [
+        "Feedback systems and stability",
+        "Modulation techniques"
+      ],
+      "limited_or_missing": [
+        "Advanced feedback control theory",
+        "Extensive laboratory-based signal acquisition"
+      ]
+    },
+
+    "learning_outcome_alignment": {
+      "fully_matched": [
+        "Time-domain and frequency-domain analysis",
+        "Transform-based system characterization",
+        "System modeling using transfer functions"
+      ],
+      "partially_matched": [
+        "Feedback stability analysis"
+      ],
+      "not_matched": []
+    },
+
+    "assessment_alignment": {
+      "similarities": [
+        "Written exams focused on analytical problem solving",
+        "Mathematical derivations"
+      ],
+      "differences": [
+        "Less emphasis on physical laboratory experiments",
+        "More continuous assessment via assignments"
+      ]
+    },
+
+    "overall_equivalency_assessment": {
+      "equivalency_level": "High",
+      "confidence": "Strong",
+      "academic_justification": "Core signal theory content, mathematical rigor, and learning outcomes align closely with EE2023."
+    }
+  },
+
+  "degree_planning_context": {
+    "counts_toward": [
+      "Bachelor of Science in Electrical Engineering",
+      "Minor in Signal Processing"
+    ],
+    "can_replace": [
+      {
+        "course_code": "EE3XX0",
+        "course_name": "Introduction to Signals"
+      }
+    ],
+    "recommended_follow_up_courses": [
+      "Digital Signal Processing",
+      "Communication Systems",
+      "Control Systems"
+    ]
+  },
+
+  "metadata": {
+    "data_status": "Placeholder",
+    "last_updated": "2026-01-02",
+    "source": "Simulated structure for transfer planning",
+    "confidence_level": "High (structure), Medium (specific codes)"
+  }
+}

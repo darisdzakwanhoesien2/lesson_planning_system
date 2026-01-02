@@ -1,0 +1,136 @@
+{
+  "source_course": {
+    "code": "EE2023",
+    "name": "Signals and Systems",
+    "credits": "4 Units",
+    "level": "Undergraduate (intermediate core)",
+    "academic_orientation": "Theoretical foundations with applied engineering analysis",
+    "key_topics": [
+      "Signals and systems relationship",
+      "Time-domain and frequency-domain representations",
+      "Fourier series and Fourier transform",
+      "Laplace transform",
+      "Signal spectrum analysis",
+      "Linear Time-Invariant (LTI) systems",
+      "Convolution",
+      "Transfer functions",
+      "Frequency response and Bode diagrams",
+      "Sampling theorem",
+      "Feedback systems and stability",
+      "Modulation",
+      "Filters"
+    ],
+    "learning_objectives": [
+      "Analyze signals in both time and frequency domains",
+      "Apply Fourier and Laplace transforms to characterize systems",
+      "Model and analyze LTI systems using convolution and transfer functions",
+      "Evaluate frequency response and system behavior using Bode plots",
+      "Understand sampling, modulation, and filtering principles",
+      "Assess stability and behavior of feedback systems"
+    ],
+    "pedagogical_style": {
+      "assessment": [
+        "Written examinations",
+        "Problem-solving exercises",
+        "Laboratory sessions"
+      ],
+      "emphasis": [
+        "Mathematical analysis",
+        "Conceptual understanding",
+        "Engineering interpretation of systems"
+      ]
+    },
+    "recommended_literature": "A. V. Oppenheim and A. S. Willsky, Signals and Systems"
+  },
+  "matching_criteria": {
+    "theoretical_depth": "Strong mathematical foundation in transforms, system theory, and signal representations",
+    "conceptual_scope": "Core signals and systems concepts spanning continuous-time and frequency-domain analysis",
+    "practical_component": "Moderate, primarily analytical with supporting laboratory work",
+    "tooling_or_methods": "Analytical derivations, transform methods, block diagrams, frequency response analysis",
+    "domain_specificity": "Electrical and Computer Engineering signal analysis",
+    "academic_rigor": "High for undergraduate level, exam-driven with formal mathematical reasoning",
+    "reasoning_basis": "Alignment is evaluated based on overlap in core signal theory topics, mathematical rigor, and system analysis methodology"
+  },
+  "coursera_equivalents": {
+    "closest_overall_matches": [
+      {
+        "title": "Signals and Systems",
+        "provider": "École Polytechnique Fédérale de Lausanne",
+        "match_level": "High",
+        "reasoning": {
+          "why_selected": [
+            "Direct focus on signals and systems theory",
+            "Covers Fourier and Laplace transforms",
+            "Includes LTI systems and frequency response"
+          ],
+          "theoretical_alignment": "Strong alignment in mathematical treatment of signals, systems, and transforms",
+          "practical_alignment": "Comparable analytical exercises, with lighter emphasis on formal examinations",
+          "gap_analysis": [
+            "Less emphasis on formal, high-stakes written exams",
+            "Limited coverage of feedback stability compared to the source course",
+            "Laboratory components are less structured"
+          ]
+        },
+        "syllabus_alignment": [
+          "Time and frequency domain analysis",
+          "Fourier series and transforms",
+          "Laplace transform",
+          "LTI systems and convolution"
+        ]
+      }
+    ],
+    "domain_core_courses": [
+      "Signals and Systems – École Polytechnique Fédérale de Lausanne"
+    ],
+    "methodological_or_technical_courses": [
+      "Digital Signal Processing – École Polytechnique Fédérale de Lausanne",
+      "Discrete-Time Signal Processing – École Polytechnique Fédérale de Lausanne"
+    ],
+    "applied_or_practice_focused_courses": [
+      "Introduction to Communication Systems – Georgia Institute of Technology"
+    ],
+    "supporting_or_foundational_courses": [
+      "Linear Algebra for Engineers – Hong Kong University of Science and Technology",
+      "Differential Equations for Engineers – Hong Kong University of Science and Technology"
+    ]
+  },
+  "recommended_learning_paths": {
+    "theory_and_academia_oriented": {
+      "goal": "Develop a rigorous theoretical foundation in signals and systems for advanced study",
+      "path": [
+        "Signals and Systems – École Polytechnique Fédérale de Lausanne",
+        "Discrete-Time Signal Processing – École Polytechnique Fédérale de Lausanne",
+        "Advanced Linear Systems (supplementary textbooks and problem sets)"
+      ],
+      "reasoning": "This sequence reinforces mathematical rigor and compensates for reduced exam intensity by layering advanced theoretical material"
+    },
+    "professional_or_industry_oriented": {
+      "goal": "Apply signal and system concepts in practical engineering contexts",
+      "path": [
+        "Signals and Systems – École Polytechnique Fédérale de Lausanne",
+        "Digital Signal Processing – École Polytechnique Fédérale de Lausanne",
+        "Introduction to Communication Systems – Georgia Institute of Technology"
+      ],
+      "reasoning": "The path emphasizes applied signal processing and communication use cases to bridge theory and practice"
+    },
+    "hybrid_or_interdisciplinary": {
+      "goal": "Combine theoretical understanding with computational and applied skills",
+      "path": [
+        "Signals and Systems – École Polytechnique Fédérale de Lausanne",
+        "Digital Signal Processing – École Polytechnique Fédérale de Lausanne",
+        "Mathematics for Machine Learning: Linear Algebra – Imperial College London"
+      ],
+      "reasoning": "This sequence strengthens mathematical intuition while enabling interdisciplinary applications in data and signal-driven fields"
+    }
+  },
+  "primary_recommendation": {
+    "course": "Signals and Systems",
+    "provider": "École Polytechnique Fédérale de Lausanne",
+    "justification": {
+      "academic_similarity": "Direct correspondence in core signals and systems theory",
+      "topic_coverage": "Covers transforms, LTI systems, convolution, and frequency response",
+      "pedagogical_fit": "Lecture-based with analytical problem-solving similar to a university core course",
+      "overall_reason": "It is the closest academically defensible Coursera equivalent to a rigorous undergraduate Signals and Systems course"
+    }
+  }
+}

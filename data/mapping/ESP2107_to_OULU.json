@@ -1,0 +1,23 @@
+{
+  "source_course": "ESP2107",
+  "target_courses": [
+    {
+      "course_code": "766301A",
+      "course_name": "Introduction to Computational Physics",
+      "ects": 5,
+      "url": "https://opas.peppi.oulu.fi/en/course/766301A/26786?period=2025-2026",
+      "mapping_type": "primary",
+      "justification": "Direct numerical methods overlap applied to physical systems."
+    },
+    {
+      "course_code": "805305A",
+      "course_name": "Introduction to Regression and Analysis of Variance",
+      "ects": 5,
+      "url": "https://opas.peppi.oulu.fi/en/course/805305A/7633?period=2025-2026",
+      "mapping_type": "supplementary",
+      "justification": "Covers statistical modeling component of ESP2107."
+    }
+  ],
+  "overall_recommendation": "Split-credit or advisor-approved substitution",
+  "confidence": "High"
+}

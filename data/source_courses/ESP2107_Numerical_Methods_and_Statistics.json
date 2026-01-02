@@ -1,0 +1,132 @@
+{
+  "source_course": {
+    "code": "ESP2107",
+    "name": "Numerical Methods and Statistics",
+    "credits": "4 Units",
+    "level": "Undergraduate (intermediate)",
+    "academic_orientation": "Applied computational mathematics with engineering and scientific problem-solving focus",
+    "key_topics": [
+      "Error analysis and numerical accuracy",
+      "Interpolation methods",
+      "Numerical integration",
+      "Solution of linear systems of equations",
+      "Solution of nonlinear equations",
+      "Numerical methods for ordinary differential equations",
+      "Numerical methods for partial differential equations",
+      "MATLAB programming and debugging",
+      "Algorithmic problem solving in engineering contexts"
+    ],
+    "learning_objectives": [
+      "Analyze numerical errors and stability in computational methods",
+      "Apply interpolation and numerical integration techniques to real problems",
+      "Solve linear and nonlinear systems using numerical algorithms",
+      "Implement numerical solutions for ordinary and partial differential equations",
+      "Develop, test, and debug MATLAB programs for scientific computing",
+      "Apply numerical methods to practical engineering and science applications"
+    ],
+    "pedagogical_style": {
+      "assessment": [
+        "Programming assignments",
+        "Problem-solving exercises",
+        "Applied computational projects"
+      ],
+      "emphasis": [
+        "Hands-on coding",
+        "Algorithmic thinking",
+        "Practical application of numerical methods"
+      ]
+    },
+    "recommended_literature": "S. C. Chapra and R. P. Canale, Numerical Methods for Engineers"
+  },
+  "matching_criteria": {
+    "theoretical_depth": "Moderate mathematical rigor focused on practical numerical algorithms rather than formal proofs",
+    "conceptual_scope": "Broad coverage of core numerical methods for equations, integration, and differential equations",
+    "practical_component": "Strong emphasis on implementation through programming and applied exercises",
+    "tooling_or_methods": "MATLAB programming, matrix-based computation, numerical algorithms",
+    "domain_specificity": "Engineering and scientific computing",
+    "academic_rigor": "Solid undergraduate rigor with sustained computational workload",
+    "reasoning_basis": "Alignment is determined by overlap in numerical techniques, programming-centered pedagogy, and application-driven learning outcomes"
+  },
+  "coursera_equivalents": {
+    "closest_overall_matches": [
+      {
+        "title": "Numerical Methods for Engineers",
+        "provider": "The Hong Kong University of Science and Technology",
+        "match_level": "High",
+        "reasoning": {
+          "why_selected": [
+            "Comprehensive coverage of core numerical methods",
+            "Strong emphasis on solving engineering problems",
+            "Includes numerical methods for equations and differential equations"
+          ],
+          "theoretical_alignment": "Good alignment in numerical analysis concepts and algorithmic foundations",
+          "practical_alignment": "Comparable focus on implementation and computational problem solving",
+          "gap_analysis": [
+            "Less sustained focus on MATLAB-specific programming practices",
+            "Limited treatment of partial differential equations",
+            "Assessment rigor is lighter than a credit-bearing university course"
+          ]
+        },
+        "syllabus_alignment": [
+          "Error analysis",
+          "Interpolation",
+          "Numerical integration",
+          "Solution of linear and nonlinear equations",
+          "Ordinary differential equations"
+        ]
+      }
+    ],
+    "domain_core_courses": [
+      "Numerical Methods for Engineers – The Hong Kong University of Science and Technology"
+    ],
+    "methodological_or_technical_courses": [
+      "Introduction to Numerical Analysis – National Research University Higher School of Economics"
+    ],
+    "applied_or_practice_focused_courses": [
+      "MATLAB Programming for Engineers and Scientists – Vanderbilt University"
+    ],
+    "supporting_or_foundational_courses": [
+      "Linear Algebra – Rice University",
+      "Differential Equations for Engineers – The Hong Kong University of Science and Technology"
+    ]
+  },
+  "recommended_learning_paths": {
+    "theory_and_academia_oriented": {
+      "goal": "Build a rigorous conceptual understanding of numerical analysis for advanced study",
+      "path": [
+        "Introduction to Numerical Analysis – National Research University Higher School of Economics",
+        "Numerical Methods for Engineers – The Hong Kong University of Science and Technology",
+        "Advanced numerical analysis (textbook-based self-study)"
+      ],
+      "reasoning": "This sequence strengthens mathematical understanding and compensates for reduced formal theory in applied online courses"
+    },
+    "professional_or_industry_oriented": {
+      "goal": "Develop practical numerical computing skills for engineering applications",
+      "path": [
+        "Numerical Methods for Engineers – The Hong Kong University of Science and Technology",
+        "MATLAB Programming for Engineers and Scientists – Vanderbilt University",
+        "Applied computational projects using real-world datasets"
+      ],
+      "reasoning": "The path emphasizes coding proficiency and applied numerical problem solving aligned with industry needs"
+    },
+    "hybrid_or_interdisciplinary": {
+      "goal": "Combine numerical theory with computational implementation across domains",
+      "path": [
+        "Numerical Methods for Engineers – The Hong Kong University of Science and Technology",
+        "MATLAB Programming for Engineers and Scientists – Vanderbilt University",
+        "Linear Algebra – Rice University"
+      ],
+      "reasoning": "This path integrates mathematical foundations with hands-on programming to support interdisciplinary engineering and science work"
+    }
+  },
+  "primary_recommendation": {
+    "course": "Numerical Methods for Engineers",
+    "provider": "The Hong Kong University of Science and Technology",
+    "justification": {
+      "academic_similarity": "Strong correspondence in numerical techniques and engineering focus",
+      "topic_coverage": "Covers core numerical methods including equations, integration, and differential equations",
+      "pedagogical_fit": "Problem-driven and computationally oriented, aligning well with applied learning objectives",
+      "overall_reason": "It is the most academically defensible Coursera equivalent to an undergraduate numerical methods and programming course"
+    }
+  }
+}
