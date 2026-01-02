@@ -1,0 +1,21 @@
+{
+  "nus_course_code": "EE2023",
+  "nus_course_name": "Signals and Systems",
+
+  "past_courses": [
+    {
+      "provider": "Coursera",
+      "course_name": "Signals and Systems",
+      "institution": "École Polytechnique Fédérale de Lausanne (EPFL)",
+      "justification": "Covers continuous- and discrete-time signal representations and system analysis."
+    },
+    {
+      "provider": "Coursera",
+      "course_name": "Discrete-Time Signal Processing",
+      "institution": "École Polytechnique Fédérale de Lausanne (EPFL)",
+      "justification": "Supports frequency-domain analysis and discrete signal processing foundations."
+    }
+  ],
+
+  "direct_oulu_links": []
+}

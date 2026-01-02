@@ -1,0 +1,21 @@
+{
+  "nus_course_code": "ES2631",
+  "nus_course_name": "Critique and Communication of Thinking and Design",
+
+  "past_courses": [
+    {
+      "provider": "Coursera",
+      "course_name": "Writing in the Sciences",
+      "institution": "Stanford University",
+      "justification": "Develops scientific writing and argumentation skills."
+    },
+    {
+      "provider": "Coursera",
+      "course_name": "Technical Communication",
+      "institution": "Georgia Institute of Technology",
+      "justification": "Covers professional and technical communication practices."
+    }
+  ],
+
+  "direct_oulu_links": []
+}

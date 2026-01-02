@@ -1,6 +1,10 @@
 Database: https://chatgpt.com/c/69578a43-52e4-8328-a540-4ad3c18fbcac
 Current Course: https://chatgpt.com/c/69579aa5-5780-8329-b8ad-47e9618ac42b
 
+1. Store the JSON mapping here: data/mappings
+2. Update it on here: data/registries/source_courses_index.json
+3. Link the JSON mapping in here: data/registries/mapping_index.json
+
 Below is a **clean, scalable project directory structure** designed specifically for:
 
 * 🔗 **Many-to-many mapping** between `source_courses` and `target_courses`

@@ -1,0 +1,21 @@
+{
+  "nus_course_code": "PC3235B",
+  "nus_course_name": "Applied Solid State Physics",
+
+  "past_courses": [
+    {
+      "provider": "Coursera",
+      "course_name": "Solid State Physics",
+      "institution": "École Polytechnique Fédérale de Lausanne (EPFL)",
+      "justification": "Covers crystal structure, band theory, and electronic properties of solids."
+    },
+    {
+      "provider": "Coursera",
+      "course_name": "Semiconductor Physics",
+      "institution": "University of Colorado Boulder",
+      "justification": "Introduces semiconductor materials, doping, and junctions."
+    }
+  ],
+
+  "direct_oulu_links": []
+}

@@ -1,0 +1,17 @@
+"direct_oulu_links": [
+  {
+    "course_name": "Quantum Mechanics I",
+    "ects": 5,
+    "justification": "Strong mathematical and numerical background supports Schrödinger equation analysis."
+  },
+  {
+    "course_name": "Quantum Mechanics II",
+    "ects": 5,
+    "justification": "Linear algebra and differential equations are foundational for operator methods."
+  },
+  {
+    "course_name": "Quantum Mechanics III",
+    "ects": 10,
+    "justification": "Advanced numerical and analytical methods enable perturbation and eigenvalue analysis."
+  }
+]

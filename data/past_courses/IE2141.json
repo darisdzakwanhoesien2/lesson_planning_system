@@ -1,0 +1,21 @@
+{
+  "nus_course_code": "IE2141",
+  "nus_course_name": "Systems Thinking and Dynamics",
+
+  "past_courses": [
+    {
+      "provider": "Coursera",
+      "course_name": "Model Thinking",
+      "institution": "University of Michigan",
+      "justification": "Introduces system modeling, feedback loops, and dynamic behavior."
+    },
+    {
+      "provider": "Coursera",
+      "course_name": "System Dynamics",
+      "institution": "University of Bergen",
+      "justification": "Covers simulation and analysis of dynamic systems."
+    }
+  ],
+
+  "direct_oulu_links": []
+}

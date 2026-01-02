@@ -6,7 +6,12 @@
   📄 app.py<br>
 <details><summary>📁 data/</summary>
   <details><summary>📁 mappings/</summary>
+      📄 EE2023_to_OULU.json<br>
+      📄 ESP2106_to_OULU.json<br>
       📄 ESP2107_to_OULU.json<br>
+      📄 IE2141_to_OULU.json<br>
+      📄 PC2020_to_OULU.json<br>
+      📄 PC3235B_to_OULU.json<br>
   </details>
   <details><summary>📁 registries/</summary>
       📄 mapping_index.json<br>
@@ -15,6 +20,7 @@
   <details><summary>📁 source_courses/</summary>
       📄 EE2023.json<br>
       📄 ESP2107_Numerical_Methods_and_Statistics.json<br>
+      📄 PC3235B_Applied_Solid_State_Physics.json<br>
   </details>
   <details><summary>📁 target_courses/</summary>
     <details><summary>📁 oulu/</summary>
@@ -28,6 +34,7 @@
 </details>
 <details><summary>📁 pages/</summary>
     📄 4_Transfer_Planning.py<br>
+    📄 5_Global_Course_Mapping.py<br>
 </details>
   📄 project_directory.md<br>
 <details><summary>📁 prompt/</summary>

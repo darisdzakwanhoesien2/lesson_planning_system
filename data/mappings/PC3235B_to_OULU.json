@@ -1,0 +1,15 @@
+{
+  "source_course": "PC3235B",
+  "target_courses": [
+    {
+      "course_code": "766305A_Solid_State_Physics",
+      "course_name": "Solid State Physics",
+      "ects": 5,
+      "url": "https://opas.peppi.oulu.fi/en/course/766305A",
+      "mapping_type": "primary",
+      "justification": "Strong overlap in crystal structures, electron theory, and semiconductor physics."
+    }
+  ],
+  "overall_recommendation": "Direct one-to-one substitution",
+  "confidence": "High"
+}

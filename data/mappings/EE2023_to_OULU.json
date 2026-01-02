@@ -1,0 +1,23 @@
+{
+  "source_course": "EE2023",
+  "target_courses": [
+    {
+      "course_code": "766201A_Wave_Motion_and_Optics",
+      "course_name": "Wave Motion and Optics",
+      "ects": 5,
+      "url": "https://opas.peppi.oulu.fi/en/course/766201A",
+      "mapping_type": "primary",
+      "justification": "Covers wave behavior, frequency-domain interpretation, and physical signal propagation."
+    },
+    {
+      "course_code": "766202A_Electromagnetism_1",
+      "course_name": "Electromagnetism 1",
+      "ects": 5,
+      "url": "https://opas.peppi.oulu.fi/en/course/766202A",
+      "mapping_type": "supplementary",
+      "justification": "Provides field-based interpretation of time-varying signals and systems."
+    }
+  ],
+  "overall_recommendation": "Primary physics-based equivalency with advisory note on system theory depth",
+  "confidence": "Medium-High"
+}

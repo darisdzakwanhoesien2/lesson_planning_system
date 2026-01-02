@@ -1,0 +1,15 @@
+{
+  "source_course": "IE2141",
+  "target_courses": [
+    {
+      "course_code": "766301A_Intro_Computational_Physics",
+      "course_name": "Introduction to Computational Physics",
+      "ects": 5,
+      "url": "https://opas.peppi.oulu.fi/en/course/766301A/26786",
+      "mapping_type": "supplementary",
+      "justification": "Shared modeling and simulation of dynamic systems."
+    }
+  ],
+  "overall_recommendation": "Advisory-based substitution; conceptual rather than physics-core",
+  "confidence": "Medium"
+}

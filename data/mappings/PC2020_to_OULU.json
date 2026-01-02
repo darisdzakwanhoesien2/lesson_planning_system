@@ -1,0 +1,23 @@
+{
+  "source_course": "PC2020",
+  "target_courses": [
+    {
+      "course_code": "766202A_Electromagnetism_1",
+      "course_name": "Electromagnetism 1",
+      "ects": 5,
+      "url": "https://opas.peppi.oulu.fi/en/course/766202A",
+      "mapping_type": "primary",
+      "justification": "Direct overlap in electric and magnetic fields, Maxwell’s equations, and wave propagation."
+    },
+    {
+      "course_code": "766203A_Electromagnetism_2",
+      "course_name": "Electromagnetism 2",
+      "ects": 5,
+      "url": "https://opas.peppi.oulu.fi/en/course/766203A",
+      "mapping_type": "supplementary",
+      "justification": "Extends to advanced field theory and electromagnetic waves."
+    }
+  ],
+  "overall_recommendation": "Direct substitution for Electromagnetism 1",
+  "confidence": "High"
+}

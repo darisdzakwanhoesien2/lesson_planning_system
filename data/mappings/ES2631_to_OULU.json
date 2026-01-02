@@ -1,0 +1,15 @@
+{
+  "source_course": "ES2631",
+  "target_courses": [
+    {
+      "course_code": "766999A_Being_a_Teacher_in_Mathematical_Subjects",
+      "course_name": "Being a Teacher in Mathematical Subjects",
+      "ects": 5,
+      "url": "https://opas.peppi.oulu.fi/en/course/766999A",
+      "mapping_type": "supplementary",
+      "justification": "Overlaps in communication, reasoning, and structured presentation of technical ideas."
+    }
+  ],
+  "overall_recommendation": "Supplementary credit only; not physics-core",
+  "confidence": "Medium"
+}

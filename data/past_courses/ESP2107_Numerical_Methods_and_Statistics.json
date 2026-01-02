@@ -1,0 +1,36 @@
+{
+  "nus_course_code": "ESP2107",
+  "nus_course_name": "Numerical Methods and Statistics",
+
+  "past_courses": [
+    {
+      "provider": "Coursera",
+      "course_code": "calculus-single-variable",
+      "course_name": "Calculus: Single Variable",
+      "institution": "University of Pennsylvania",
+      "justification": "Provides differential and integral calculus foundation required for numerical integration and error analysis."
+    },
+    {
+      "provider": "Coursera",
+      "course_code": "linear-algebra-machine-learning",
+      "course_name": "Linear Algebra for Machine Learning",
+      "institution": "DeepLearning.AI",
+      "justification": "Supports matrix methods and linear systems used in numerical computation."
+    },
+    {
+      "provider": "Coursera",
+      "course_code": "probability-statistics",
+      "course_name": "Probability and Statistics",
+      "institution": "University of London",
+      "justification": "Covers statistical inference and error estimation relevant to numerical methods."
+    }
+  ],
+
+  "direct_oulu_links": [
+    {
+      "course_name": "Quantum Mechanics I",
+      "ects": 5,
+      "justification": "Mathematical methods and numerical problem-solving skills are prerequisites for introductory quantum mechanics."
+    }
+  ]
+}

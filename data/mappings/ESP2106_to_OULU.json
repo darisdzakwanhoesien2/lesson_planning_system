@@ -1,0 +1,23 @@
+{
+  "source_course": "ESP2106",
+  "target_courses": [
+    {
+      "course_code": "766102A_Mechanics_1",
+      "course_name": "Mechanics 1",
+      "ects": 5,
+      "url": "https://opas.peppi.oulu.fi/en/course/766102A",
+      "mapping_type": "primary",
+      "justification": "Overlaps in conservation laws, stress-strain concepts, and continuum mechanics foundations."
+    },
+    {
+      "course_code": "766103A_Mechanics_2",
+      "course_name": "Mechanics 2",
+      "ects": 5,
+      "url": "https://opas.peppi.oulu.fi/en/course/766103A",
+      "mapping_type": "supplementary",
+      "justification": "Extends deformation and motion analysis to more complex systems."
+    }
+  ],
+  "overall_recommendation": "Primary mechanics substitution with depth extension",
+  "confidence": "High"
+}
