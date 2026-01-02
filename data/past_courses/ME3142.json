@@ -1,0 +1,43 @@
+{
+  "nus_course_code": "ME3142",
+  "nus_course_name": "Feedback Control Systems",
+
+  "past_courses": [
+    {
+      "provider": "Coursera",
+      "course_name": "Differential Equations for Engineers",
+      "institution": "Hong Kong University of Science and Technology",
+      "justification": "Provides differential equation solutions and understanding of system dynamics required for control system time responses."
+    },
+    {
+      "provider": "Coursera",
+      "course_name": "Linear Systems and Control",
+      "institution": "University of Colorado Boulder",
+      "justification": "Covers fundamental control system modeling, transfer functions, and analysis methods that align with core control topics in ME3142."
+    },
+    {
+      "provider": "Coursera",
+      "course_name": "Control of Mobile Robots",
+      "institution": "Georgia Institute of Technology",
+      "justification": "Provides basic control design and feedback concepts in an engineering context, including stability and frequency response ideas."
+    }
+  ],
+
+  "direct_oulu_links": [
+    {
+      "course_name": "Signals and Systems",
+      "ects": 5,
+      "justification": "Time and frequency response fundamentals overlap with core ME3142 topics."
+    },
+    {
+      "course_name": "Linear Systems and Signals", 
+      "ects": 5,
+      "justification": "Core mathematical modeling and transform methods that are prerequisites for control systems."
+    },
+    {
+      "course_name": "Automatic Control",
+      "ects": 5,
+      "justification": "Direct control theory course (steady-state error, frequency response, stability)."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "nus_course_code": "ESP3201A",
+  "nus_course_name": "Machine Learning in Engineering Science",
+  "past_courses": [
+    {
+      "provider": "Coursera",
+      "course_name": "Machine Learning",
+      "institution": "Stanford University",
+      "justification": "Introduces supervised and unsupervised learning methods foundational to ESP3201A."
+    },
+    {
+      "provider": "Coursera",
+      "course_name": "Linear Algebra for Machine Learning",
+      "institution": "DeepLearning.AI",
+      "justification": "Covers matrix algebra and vector spaces important to understanding optimization and model representations."
+    },
+    {
+      "provider": "Coursera",
+      "course_name": "Statistics with Python",
+      "institution": "University of Michigan",
+      "justification": "Provides statistical foundations (estimation, variance) which are prerequisites for many ML models."
+    },
+    {
+      "provider": "Coursera",
+      "course_name": "Optimization Methods in Machine Learning",
+      "institution": "University at Buffalo",
+      "justification": "Covers optimization algorithms relevant for training machine learning models."
+    }
+  ],
+  "direct_oulu_links": [
+    {
+      "course_name": "Signals and Systems",
+      "ects": 5,
+      "justification": "Frequency and time domain analysis knowledge provides mathematical maturity useful for ML signal processing."
+    },
+    {
+      "course_name": "Introduction to Multivariate Methods",
+      "ects": 5,
+      "justification": "Direct overlap with dimensionality reduction and multivariate data analysis concepts."
+    },
+    {
+      "course_name": "Introduction to Regression and Analysis of Variance",
+      "ects": 5,
+      "justification": "Regression analysis is a core ML method; Oulu’s course reinforces this statistical foundation."
+    }
+  ]
+}

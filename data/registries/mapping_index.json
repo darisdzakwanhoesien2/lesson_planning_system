@@ -1,11 +1,30 @@
 [
   {
-    "source_course": "ESP2107_Numerical_Methods_and_Statistics",
+    "source_course": "EE2023",
+    "mapping_file": "EE2023_to_OULU.json"
+  },
+  {
+    "source_course": "ESP2106",
+    "mapping_file": "ESP2106_to_OULU.json"
+  },
+  {
+    "source_course": "ESP2107",
     "mapping_file": "ESP2107_to_OULU.json"
   },
-  { "source_course": "EE2023", "mapping_file": "EE2023_to_OULU.json" },
-  { "source_course": "ESP2106", "mapping_file": "ESP2106_to_OULU.json" },
-  { "source_course": "IE2141", "mapping_file": "IE2141_to_OULU.json" },
-  { "source_course": "PC2020", "mapping_file": "PC2020_to_OULU.json" },
-  { "source_course": "PC3235B", "mapping_file": "PC3235B_to_OULU.json" },
-  { "source_course": "ES2631", "mapping_file": "ES2631_to_OULU.json" }]
+  {
+    "source_course": "IE2141",
+    "mapping_file": "IE2141_to_OULU.json"
+  },
+  {
+    "source_course": "PC2020",
+    "mapping_file": "PC2020_to_OULU.json"
+  },
+  {
+    "source_course": "PC3235B",
+    "mapping_file": "PC3235B_to_OULU.json"
+  },
+  {
+    "source_course": "ES2631",
+    "mapping_file": "ES2631_to_OULU.json"
+  }
+]

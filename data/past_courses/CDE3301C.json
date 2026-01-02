@@ -1,0 +1,36 @@
+{
+  "nus_course_code": "CDE3301C",
+  "nus_course_name": "Complex Systems Design: From Mission to Prototype",
+  "past_courses": [
+    {
+      "provider": "Coursera",
+      "course_name": "System Design: Designing Complex Systems",
+      "institution": "University at Buffalo",
+      "justification": "Introduces system thinking and complex design principles relevant to requirements and architecture."
+    },
+    {
+      "provider": "Coursera",
+      "course_name": "Design Thinking for Innovation",
+      "institution": "University of Virginia",
+      "justification": "Covers ideation and prototyping methods applicable to multidisciplinary engineering design."
+    },
+    {
+      "provider": "Coursera",
+      "course_name": "Managing Project Risks and Changes",
+      "institution": "University of California Irvine",
+      "justification": "Provides project planning and risk mitigation frameworks useful in complex design workflows."
+    }
+  ],
+  "direct_oulu_links": [
+    {
+      "course_name": "Systems Thinking and Dynamics",
+      "ects": 5,
+      "justification": "Overlaps with conceptual modeling and dynamic system behavior relevant to complex design."
+    },
+    {
+      "course_name": "Advanced Laboratory Exercises in Physics",
+      "ects": 5,
+      "justification": "Team-based prototype development and experimental execution overlap with practical design."
+    }
+  ]
+}

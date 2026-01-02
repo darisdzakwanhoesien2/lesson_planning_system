@@ -1,12 +1,46 @@
 [
-  { "course_code": "EE2023", "course_name": "Signals and Systems" },
-  { "course_code": "ESP2106", "course_name": "Principles of Continua" },
-  { "course_code": "IE2141", "course_name": "Systems Thinking and Dynamics" },
-  { "course_code": "PC2020", "course_name": "Electromagnetics for Electrical Engineers" },
-  { "course_code": "PC3235B", "course_name": "Applied Solid State Physics" },
-  { "course_code": "ES2631", "course_name": "Critique and Communication of Thinking and Design" },
   {
-    "course_code": "ESP2107_Numerical_Methods_and_Statistics",
+    "course_code": "EE2023",
+    "course_name": "Signals and Systems"
+  },
+  {
+    "course_code": "ESP2106",
+    "course_name": "Principles of Continua"
+  },
+  {
+    "course_code": "ESP2107",
     "course_name": "Numerical Methods and Statistics"
+  },
+  {
+    "course_code": "IE2141",
+    "course_name": "Systems Thinking and Dynamics"
+  },
+  {
+    "course_code": "PC2020",
+    "course_name": "Electromagnetics for Electrical Engineers"
+  },
+  {
+    "course_code": "PC3235B",
+    "course_name": "Applied Solid State Physics"
+  },
+  {
+    "course_code": "ES2631",
+    "course_name": "Critique and Communication of Thinking and Design"
+  },
+  {
+    "course_code": "ESP3201A",
+    "course_name": "Machine Learning in Engineering Science"
+  },
+  {
+    "course_code": "ME3142",
+    "course_name": "Feedback Control Systems"
+  },
+  {
+    "course_code": "PC2130B",
+    "course_name": "Applied Quantum Physics"
+  },
+  {
+    "course_code": "CDE3301C",
+    "course_name": "Complex Systems Design: From Mission to Prototype"
   }
 ]

@@ -1,0 +1,35 @@
+{
+  "nus_course_code": "PC2130B",
+  "nus_course_name": "Applied Quantum Physics",
+  "past_courses": [
+    {
+      "provider": "Coursera",
+      "course_name": "Quantum Mechanics for Scientists and Engineers",
+      "institution": "Stanford University",
+      "justification": "Introduces core quantum mechanical principles, wave functions, and operator methods foundational to PC2130B."
+    },
+    {
+      "provider": "Coursera",
+      "course_name": "Linear Algebra for Machine Learning",
+      "institution": "DeepLearning.AI",
+      "justification": "Provides linear algebra tools required for state vector and operator representations in quantum mechanics."
+    }
+  ],
+  "direct_oulu_links": [
+    {
+      "course_name": "Quantum Mechanics I",
+      "ects": 5,
+      "justification": "Direct content overlap with introductory quantum mechanics topics studied in PC2130B."
+    },
+    {
+      "course_name": "Quantum Mechanics II",
+      "ects": 5,
+      "justification": "Continuation and deeper quantum theory aligned with PC2130B advanced topics."
+    },
+    {
+      "course_name": "Mathematics for Physics",
+      "ects": 5,
+      "justification": "Mathematical methods (differential equations, vector spaces) support quantum formulation."
+    }
+  ]
+}

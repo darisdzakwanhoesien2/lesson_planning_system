@@ -1,9 +1,25 @@
 Database: https://chatgpt.com/c/69578a43-52e4-8328-a540-4ad3c18fbcac
 Current Course: https://chatgpt.com/c/69579aa5-5780-8329-b8ad-47e9618ac42b
 
+
+https://chatgpt.com/c/6957b41d-7fc0-8331-be37-b04a1c04a71c
+
+
 1. Store the JSON mapping here: data/mappings
 2. Update it on here: data/registries/source_courses_index.json
 3. Link the JSON mapping in here: data/registries/mapping_index.json
+
+Extra to be mapped
+"BASKET A: 
+ME2142/ME3142 Feedback Control Systems"
+"BASKET C:
+ESP3201A Machine Learning in Engineering Science"
+CDE3301C Complex Systems Design: From Mission to Prototype
+PC2130B Applied Quantum Physics
+
+https://nusmods.com/courses/PC2130B/applied-quantum-physics
+https://nusmods.com/courses/ESP3201A/machine-learning-in-engineering-science
+https://nusmods.com/courses/ME3142/feedback-control-systems
 
 Below is a **clean, scalable project directory structure** designed specifically for:
 
@@ -276,3 +292,211 @@ If you want, next we can add:
 
 Just tell me which direction you want to push this 🚀
 # lesson_planning_system
+
+You’ve done the **data work correctly** 👍
+What’s missing now is **wiring** — your current page simply **does not read `data/past_courses/` at all**, so nothing new can “appear” no matter how good the JSONs are.
+
+I’ll explain this in **three very concrete steps**, then give you a **minimal, safe code change** (not a rewrite).
+
+---
+
+## 1️⃣ Why nothing appears (root cause)
+
+Your current `Global_Course_Mapping.py` only reads **three things**:
+
+```python
+source_courses_index.json   → source nodes
+mapping_index.json          → which mapping files to load
+data/mappings/*.json        → target course edges
+```
+
+### 🔴 It NEVER reads:
+
+```
+data/past_courses/*.json
+```
+
+So logically:
+
+* You can add 100 past course JSONs
+* The graph will remain unchanged
+* This is **expected behavior**
+
+Nothing is “broken”.
+
+---
+
+## 2️⃣ What you must decide (important design choice)
+
+You have **two valid options**, and you must pick **one**.
+
+### Option A (recommended):
+
+➡️ **Show past courses in the Global Graph**
+
+This turns the page into:
+
+```
+Past (Coursera) → NUS → Oulu
+```
+
+### Option B:
+
+➡️ Keep Global Graph clean, and show past courses only in a **separate page**
+
+You already chose Option A earlier, so I’ll implement **Option A** cleanly.
+
+---
+
+## 3️⃣ Minimal changes required (what to do now)
+
+### ✅ Step 1 — Add the path
+
+Add this near your PATHS section:
+
+```python
+PAST_COURSES_DIR = DATA_DIR / "past_courses"
+```
+
+---
+
+### ✅ Step 2 — Load past courses per source course
+
+Inside your **SOURCE COURSE NODES loop**, load past courses:
+
+```python
+for src in source_courses:
+    src_code = src["course_code"]
+    src_name = src["course_name"]
+
+    # Source node
+    dot.node(
+        src_code,
+        f"{src_code}\n{src_name}",
+        shape="box",
+        style="filled",
+        fillcolor="#FFF4CC"
+    )
+
+    # 🔹 Load past courses if available
+    past_file = PAST_COURSES_DIR / f"{src_code}.json"
+    past_data = load_json(past_file) if past_file.exists() else {}
+
+    for pc in past_data.get("past_courses", []):
+        pc_id = f"PAST_{src_code}_{pc['course_name']}"
+
+        dot.node(
+            pc_id,
+            f"{pc['course_name']}\n({pc['institution']})",
+            shape="box",
+            style="filled",
+            fillcolor="#E8F0FE"
+        )
+
+        dot.edge(pc_id, src_code)
+```
+
+📌 **What this does**
+
+* Adds Coursera / prior learning nodes
+* Connects them → NUS course
+* No impact on Oulu logic
+
+---
+
+### ✅ Step 3 — (Optional but recommended) Add direct Oulu readiness
+
+Below your existing **MAPPINGS → TARGET COURSES** loop, add:
+
+```python
+    # 🔹 Direct readiness links (non-credit)
+    for direct in past_data.get("direct_oulu_links", []):
+        oulu_id = f"READINESS_{direct['course_name']}"
+
+        dot.node(
+            oulu_id,
+            f"{direct['course_name']}\n({direct['ects']} ECTS)",
+            shape="box",
+            style="filled",
+            fillcolor="#D0F0E0"
+        )
+
+        for pc in past_data.get("past_courses", []):
+            pc_id = f"PAST_{src_code}_{pc['course_name']}"
+            dot.edge(
+                pc_id,
+                oulu_id,
+                style="dashed",
+                color="gray"
+            )
+```
+
+📌 This will:
+
+* Show **Quantum Mechanics I–III**
+* With **dashed edges**
+* Correctly labeled as *readiness*, not equivalence
+
+---
+
+## 4️⃣ Resulting graph semantics (very important)
+
+After this change, your graph will correctly show:
+
+| Node color  | Meaning                             |
+| ----------- | ----------------------------------- |
+| Blue        | Past learning (Coursera / evidence) |
+| Yellow      | NUS source courses                  |
+| Green       | Oulu credit-equivalent courses      |
+| Teal        | Oulu readiness / future courses     |
+| Solid edge  | Formal equivalence                  |
+| Dashed edge | Preparatory / readiness             |
+
+This **fixes the confusion you had earlier** about:
+
+* Calculus
+* Quantum Mechanics
+* Coursera’s role
+
+---
+
+## 5️⃣ Checklist — what you should verify now
+
+Before running Streamlit:
+
+* [ ] `data/past_courses/ESP3201A.json` exists
+* [ ] Filename matches `course_code` exactly
+* [ ] `past_courses` key exists in JSON
+* [ ] `source_courses_index.json` includes ESP3201A, PC2130B, etc.
+* [ ] Restart Streamlit (important)
+
+---
+
+## 6️⃣ What NOT to do (common mistake)
+
+❌ Do **not** add past courses to:
+
+* `mapping_index.json`
+* `data/mappings/*.json`
+
+That would incorrectly imply credit equivalence.
+
+---
+
+## 7️⃣ Next logical step (optional)
+
+Once this works, the **right next page** is:
+
+```
+6_Prerequisite_and_Readiness_Graph.py
+```
+
+That page would:
+
+* Collapse Coursera courses into abstract prerequisites
+* Show *capability readiness* cleanly
+* Remove visual clutter
+
+If you want, I can design that next — but first, implement the above and you’ll see your new data appear immediately.
+
+If you want, paste your updated file here and I’ll sanity-check it line by line.
