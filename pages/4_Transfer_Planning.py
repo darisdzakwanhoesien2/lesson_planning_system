@@ -139,3 +139,91 @@ st.subheader("3️⃣ Overall Transfer Recommendation")
 
 st.markdown(f"**Recommendation:** {mapping_data.get('overall_recommendation', 'unknown')}")
 st.markdown(f"**Confidence:** {mapping_data.get('confidence', 'unknown')}")
+
+from graphviz import Digraph
+
+st.subheader("2️⃣ Course Mapping Visualization")
+
+from graphviz import Digraph
+
+def render_course_graph(source_course, mapping_data):
+    """
+    Visualizes:
+    Past Courses → NUS Course → Oulu Extra Courses
+    """
+
+    # --------------------------------------------------
+    # Defensive extraction (NO KeyError possible)
+    # --------------------------------------------------
+    course_code = source_course.get("course_code", "UNKNOWN")
+    course_name = source_course.get("course_name", "Unknown Course")
+
+    # Optional: past courses (may not exist yet)
+    past_courses = source_course.get("previous_courses", [])
+    if not past_courses:
+        past_courses = ["Past Coursework"]
+
+    dot = Digraph(
+        format="png",
+        graph_attr={
+            "rankdir": "LR",
+            "splines": "ortho",
+            "nodesep": "0.8",
+            "ranksep": "1.2"
+        }
+    )
+
+    # --------------------------------------------------
+    # Column 1: Past Courses
+    # --------------------------------------------------
+    for pc in past_courses:
+        dot.node(
+            pc,
+            pc,
+            shape="box",
+            style="filled",
+            fillcolor="#E8F0FE"
+        )
+
+    # --------------------------------------------------
+    # Column 2: NUS Course (Source)
+    # --------------------------------------------------
+    nus_node_id = course_code
+    nus_label = f"{course_code}\n{course_name}"
+
+    dot.node(
+        nus_node_id,
+        nus_label,
+        shape="box",
+        style="filled",
+        fillcolor="#FFF4CC"
+    )
+
+    for pc in past_courses:
+        dot.edge(pc, nus_node_id)
+
+    # --------------------------------------------------
+    # Column 3: Oulu Extra Courses
+    # --------------------------------------------------
+    for target in mapping_data.get("target_courses", []):
+        target_code = target.get("course_code", "UNKNOWN")
+        target_name = target.get("course_name", "Unknown")
+
+        oulu_label = f"{target_code}\n{target_name}"
+
+        dot.node(
+            target_code,
+            oulu_label,
+            shape="box",
+            style="filled",
+            fillcolor="#E6F4EA"
+        )
+
+        dot.edge(nus_node_id, target_code)
+
+    return dot
+
+
+
+graph = render_course_graph(source_course, mapping_data)
+st.graphviz_chart(graph)

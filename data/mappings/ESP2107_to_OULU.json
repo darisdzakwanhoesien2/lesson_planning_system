@@ -10,13 +10,29 @@
       "justification": "Direct numerical methods overlap applied to physical systems."
     },
     {
-      "course_code": "805305A",
+      "course_code": "805305A_Regression_ANOVA",
       "course_name": "Introduction to Regression and Analysis of Variance",
       "ects": 5,
       "url": "https://opas.peppi.oulu.fi/en/course/805305A/7633?period=2025-2026",
       "mapping_type": "supplementary",
       "justification": "Covers statistical modeling component of ESP2107."
-    }
+    },
+    {
+      "course_code": "805306A_Multivariate_Methods",
+      "course_name": "Introduction to Multivariate Methods (5 ECTS)",
+      "ects": 5,
+      "url": "https://opas.peppi.oulu.fi/en/course/805306A/7634?period=2025-2026",
+      "mapping_type": "primary",
+      "justification": ""
+    },
+    {
+      "course_code": "766101P_Mathematics_for_Physics",
+      "course_name": "Mathematics for Physics (5 ECTS)",
+      "ects": 5,
+      "url": "https://opas.peppi.oulu.fi/en/course/766101P/6745?period=2025-2026",
+      "mapping_type": "supplementary",
+      "justification": ""
+    }    
   ],
   "overall_recommendation": "Split-credit or advisor-approved substitution",
   "confidence": "High"
