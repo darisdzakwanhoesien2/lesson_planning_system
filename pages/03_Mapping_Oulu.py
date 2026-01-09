@@ -8,17 +8,20 @@ import pandas as pd
 # ==================================================
 # PAGE CONFIG
 # ==================================================
-st.set_page_config(page_title="Past → Oulu Mapping with Notes", layout="wide")
+st.set_page_config(page_title="Past → Oulu Mapping (Links + Notes)", layout="wide")
 
-st.title("🎓 Past → Oulu Course Mapping (with Notes)")
-st.caption("Edit notes, descriptions, and URLs — saved permanently. Physics: https://opas.peppi.oulu.fi/en/programme/45124?period=2025-2026. Information Science: https://opas.peppi.oulu.fi/en/offering/SA2025TOL/44975?period=2025-2026")
+st.title("🎓 Past → Oulu Course Mapping")
+st.caption("Edit course URLs and mapping notes — all saved permanently")
 
 # ==================================================
 # PATHS
 # ==================================================
-GRAPH_JSON_PATH = Path("data/exports/course_mapping_graph.json")
-NOTES_PATH = Path("data/exports/course_notes.json")
-NOTES_PATH.parent.mkdir(parents=True, exist_ok=True)
+DATA_DIR = Path("data/exports")
+GRAPH_JSON_PATH = DATA_DIR / "course_mapping_graph.json"
+NOTES_PATH = DATA_DIR / "course_notes.json"
+LINKS_PATH = DATA_DIR / "course_links.json"
+
+DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 if not GRAPH_JSON_PATH.exists():
     st.error("❌ course_mapping_graph.json not found in data/exports/")
@@ -40,16 +43,13 @@ past_nodes = {n["id"]: n for n in nodes if n["type"] == "past"}
 target_nodes = {n["id"]: n for n in nodes if n["type"] == "target"}
 
 # ==================================================
-# LOAD NOTES (PERSISTENT)
+# LOAD NOTES & LINKS (PERSISTENT)
 # ==================================================
-if NOTES_PATH.exists():
-    with NOTES_PATH.open("r", encoding="utf-8") as f:
-        notes_db = json.load(f)
-else:
-    notes_db = {}
+notes_db = json.load(NOTES_PATH.open()) if NOTES_PATH.exists() else {}
+links_db = json.load(LINKS_PATH.open()) if LINKS_PATH.exists() else {}
 
 # ==================================================
-# BUILD PATHS
+# BUILD PATHS (PAST → NUS → OULU)
 # ==================================================
 past_to_nus = defaultdict(set)
 nus_to_oulu = defaultdict(set)
@@ -58,7 +58,6 @@ for e in edges:
     src, tgt = e.get("from"), e.get("to")
     if not src or not tgt:
         continue
-
     if node_type.get(src) == "past" and node_type.get(tgt) == "source":
         past_to_nus[src].add(tgt)
     if node_type.get(src) == "source" and node_type.get(tgt) == "target":
@@ -88,74 +87,128 @@ else:
     selected_past_ids = set(past_nodes.keys())
 
 # ==================================================
-# BUILD EDITABLE TABLE
+# COURSE LINK TABLES
 # ==================================================
-rows = []
+st.subheader("🔗 Course Links (Editable & Saved)")
 
+tab_past_links, tab_oulu_links = st.tabs(["🟦 Past Course Links", "🟩 Oulu Course Links"])
+
+# ---------- Past Links ----------
+past_link_rows = []
+for pid, n in past_nodes.items():
+    past_link_rows.append({
+        "course_id": pid,
+        "course": n["label"],
+        "url": links_db.get(pid, "")
+    })
+
+past_links_df = pd.DataFrame(past_link_rows)
+
+with tab_past_links:
+    edited_past_links = st.data_editor(
+        past_links_df,
+        use_container_width=True,
+        column_config={
+            "course_id": st.column_config.TextColumn("ID", disabled=True),
+            "course": st.column_config.TextColumn("Course", disabled=True),
+            "url": st.column_config.LinkColumn("Course URL")
+        }
+    )
+
+# ---------- Oulu Links ----------
+oulu_link_rows = []
+for tid, n in target_nodes.items():
+    oulu_link_rows.append({
+        "course_id": tid,
+        "course": n["label"],
+        "url": links_db.get(tid, "")
+    })
+
+oulu_links_df = pd.DataFrame(oulu_link_rows)
+
+with tab_oulu_links:
+    edited_oulu_links = st.data_editor(
+        oulu_links_df,
+        use_container_width=True,
+        column_config={
+            "course_id": st.column_config.TextColumn("ID", disabled=True),
+            "course": st.column_config.TextColumn("Course", disabled=True),
+            "url": st.column_config.LinkColumn("Course URL")
+        }
+    )
+
+# ==================================================
+# SAVE LINKS
+# ==================================================
+if st.button("💾 Save Course Links"):
+    for _, r in pd.concat([edited_past_links, edited_oulu_links]).iterrows():
+        links_db[r.course_id] = r.url
+
+    with LINKS_PATH.open("w", encoding="utf-8") as f:
+        json.dump(links_db, f, indent=2, ensure_ascii=False)
+
+    st.success("Course links saved permanently.")
+
+# ==================================================
+# MAPPING NOTES TABLE
+# ==================================================
+st.subheader("📝 Mapping Notes (Past → Oulu)")
+
+rows = []
 for pid in selected_past_ids:
     for tid in collapsed.get(pid, []):
         key = f"{pid}__{tid}"
-
         record = notes_db.get(key, {})
-
         rows.append({
-            "past_id": pid,
             "past_course": past_nodes[pid]["label"],
-            "oulu_id": tid,
+            "past_url": links_db.get(pid, ""),
             "oulu_course": target_nodes[tid]["label"],
+            "oulu_url": links_db.get(tid, ""),
             "description": record.get("description", ""),
             "notes": record.get("notes", ""),
-            "url": record.get("url", "")
+            "key": key
         })
 
-df = pd.DataFrame(rows)
+notes_df = pd.DataFrame(rows)
 
-# ==================================================
-# EDITOR
-# ==================================================
-st.subheader("📝 Editable Mapping Notes (Saved Permanently)")
-
-edited_df = st.data_editor(
-    df,
+edited_notes = st.data_editor(
+    notes_df,
     use_container_width=True,
-    num_rows="fixed",
     column_config={
-        "past_id": st.column_config.TextColumn("Past ID", disabled=True),
-        "oulu_id": st.column_config.TextColumn("Oulu ID", disabled=True),
         "past_course": st.column_config.TextColumn("Past Course", disabled=True),
         "oulu_course": st.column_config.TextColumn("Oulu Course", disabled=True),
-        "url": st.column_config.LinkColumn("URL")
+        "past_url": st.column_config.LinkColumn("Past URL"),
+        "oulu_url": st.column_config.LinkColumn("Oulu URL"),
+        "key": st.column_config.TextColumn("Key", disabled=True),
     }
 )
 
 # ==================================================
-# SAVE BUTTON
+# SAVE NOTES
 # ==================================================
-if st.button("💾 Save Notes Permanently"):
-    for _, r in edited_df.iterrows():
-        key = f"{r.past_id}__{r.oulu_id}"
-        notes_db[key] = {
+if st.button("💾 Save Mapping Notes"):
+    for _, r in edited_notes.iterrows():
+        notes_db[r.key] = {
             "description": r.description,
-            "notes": r.notes,
-            "url": r.url
+            "notes": r.notes
         }
 
     with NOTES_PATH.open("w", encoding="utf-8") as f:
         json.dump(notes_db, f, indent=2, ensure_ascii=False)
 
-    st.success("Saved to data/exports/course_notes.json")
+    st.success("Mapping notes saved permanently.")
 
 # ==================================================
-# GRAPH
+# GRAPH (STRUCTURE ONLY)
 # ==================================================
 dot = Digraph(format="png", graph_attr={"rankdir": "LR", "nodesep": "1", "ranksep": "1.3"})
-
-for pid in selected_past_ids:
-    dot.node(pid, past_nodes[pid]["label"], shape="box", style="filled", fillcolor="#E8F0FE")
 
 mapped_targets = set()
 for pid in selected_past_ids:
     mapped_targets |= collapsed.get(pid, set())
+
+for pid in selected_past_ids:
+    dot.node(pid, past_nodes[pid]["label"], shape="box", style="filled", fillcolor="#E8F0FE")
 
 for tid in mapped_targets:
     dot.node(tid, target_nodes[tid]["label"], shape="box", style="filled", fillcolor="#E6F4EA")
@@ -164,14 +217,193 @@ for pid in selected_past_ids:
     for tid in collapsed.get(pid, []):
         dot.edge(pid, tid)
 
-st.subheader("🧭 Transfer Graph (Past → Oulu)")
+st.subheader("🧭 Transfer Graph (Structure View)")
 st.graphviz_chart(dot)
 
 # ==================================================
 # DEBUG
 # ==================================================
-with st.expander("🛠 Raw Notes DB"):
+with st.expander("🛠 Stored Databases"):
+    st.write("### Course Links")
+    st.json(links_db)
+    st.write("### Mapping Notes")
     st.json(notes_db)
+
+
+# import streamlit as st
+# from pathlib import Path
+# import json
+# from graphviz import Digraph
+# from collections import defaultdict
+# import pandas as pd
+
+# # ==================================================
+# # PAGE CONFIG
+# # ==================================================
+# st.set_page_config(page_title="Past → Oulu Mapping with Notes", layout="wide")
+
+# st.title("🎓 Past → Oulu Course Mapping (with Notes)")
+# st.caption("Edit notes, descriptions, and URLs — saved permanently. Physics: https://opas.peppi.oulu.fi/en/programme/45124?period=2025-2026. Information Science: https://opas.peppi.oulu.fi/en/offering/SA2025TOL/44975?period=2025-2026")
+
+# # ==================================================
+# # PATHS
+# # ==================================================
+# GRAPH_JSON_PATH = Path("data/exports/course_mapping_graph.json")
+# NOTES_PATH = Path("data/exports/course_notes.json")
+# NOTES_PATH.parent.mkdir(parents=True, exist_ok=True)
+
+# if not GRAPH_JSON_PATH.exists():
+#     st.error("❌ course_mapping_graph.json not found in data/exports/")
+#     st.stop()
+
+# # ==================================================
+# # LOAD GRAPH
+# # ==================================================
+# with GRAPH_JSON_PATH.open("r", encoding="utf-8") as f:
+#     graph_data = json.load(f)
+
+# nodes = graph_data["nodes"]
+# edges = graph_data["edges"]
+
+# node_by_id = {n["id"]: n for n in nodes}
+# node_type = {n["id"]: n["type"] for n in nodes}
+
+# past_nodes = {n["id"]: n for n in nodes if n["type"] == "past"}
+# target_nodes = {n["id"]: n for n in nodes if n["type"] == "target"}
+
+# # ==================================================
+# # LOAD NOTES (PERSISTENT)
+# # ==================================================
+# if NOTES_PATH.exists():
+#     with NOTES_PATH.open("r", encoding="utf-8") as f:
+#         notes_db = json.load(f)
+# else:
+#     notes_db = {}
+
+# # ==================================================
+# # BUILD PATHS
+# # ==================================================
+# past_to_nus = defaultdict(set)
+# nus_to_oulu = defaultdict(set)
+
+# for e in edges:
+#     src, tgt = e.get("from"), e.get("to")
+#     if not src or not tgt:
+#         continue
+
+#     if node_type.get(src) == "past" and node_type.get(tgt) == "source":
+#         past_to_nus[src].add(tgt)
+#     if node_type.get(src) == "source" and node_type.get(tgt) == "target":
+#         nus_to_oulu[src].add(tgt)
+
+# collapsed = defaultdict(set)
+# for p, nus_set in past_to_nus.items():
+#     for n in nus_set:
+#         for o in nus_to_oulu.get(n, []):
+#             collapsed[p].add(o)
+
+# # ==================================================
+# # SIDEBAR FILTER
+# # ==================================================
+# st.sidebar.header("🎯 Filter")
+
+# past_label_to_id = {v["label"]: k for k, v in past_nodes.items()}
+
+# selected_labels = st.sidebar.multiselect(
+#     "Select Past Courses",
+#     options=sorted(past_label_to_id.keys())
+# )
+
+# if selected_labels:
+#     selected_past_ids = {past_label_to_id[l] for l in selected_labels}
+# else:
+#     selected_past_ids = set(past_nodes.keys())
+
+# # ==================================================
+# # BUILD EDITABLE TABLE
+# # ==================================================
+# rows = []
+
+# for pid in selected_past_ids:
+#     for tid in collapsed.get(pid, []):
+#         key = f"{pid}__{tid}"
+
+#         record = notes_db.get(key, {})
+
+#         rows.append({
+#             "past_id": pid,
+#             "past_course": past_nodes[pid]["label"],
+#             "oulu_id": tid,
+#             "oulu_course": target_nodes[tid]["label"],
+#             "description": record.get("description", ""),
+#             "notes": record.get("notes", ""),
+#             "url": record.get("url", "")
+#         })
+
+# df = pd.DataFrame(rows)
+
+# # ==================================================
+# # EDITOR
+# # ==================================================
+# st.subheader("📝 Editable Mapping Notes (Saved Permanently)")
+
+# edited_df = st.data_editor(
+#     df,
+#     use_container_width=True,
+#     num_rows="fixed",
+#     column_config={
+#         "past_id": st.column_config.TextColumn("Past ID", disabled=True),
+#         "oulu_id": st.column_config.TextColumn("Oulu ID", disabled=True),
+#         "past_course": st.column_config.TextColumn("Past Course", disabled=True),
+#         "oulu_course": st.column_config.TextColumn("Oulu Course", disabled=True),
+#         "url": st.column_config.LinkColumn("URL")
+#     }
+# )
+
+# # ==================================================
+# # SAVE BUTTON
+# # ==================================================
+# if st.button("💾 Save Notes Permanently"):
+#     for _, r in edited_df.iterrows():
+#         key = f"{r.past_id}__{r.oulu_id}"
+#         notes_db[key] = {
+#             "description": r.description,
+#             "notes": r.notes,
+#             "url": r.url
+#         }
+
+#     with NOTES_PATH.open("w", encoding="utf-8") as f:
+#         json.dump(notes_db, f, indent=2, ensure_ascii=False)
+
+#     st.success("Saved to data/exports/course_notes.json")
+
+# # ==================================================
+# # GRAPH
+# # ==================================================
+# dot = Digraph(format="png", graph_attr={"rankdir": "LR", "nodesep": "1", "ranksep": "1.3"})
+
+# for pid in selected_past_ids:
+#     dot.node(pid, past_nodes[pid]["label"], shape="box", style="filled", fillcolor="#E8F0FE")
+
+# mapped_targets = set()
+# for pid in selected_past_ids:
+#     mapped_targets |= collapsed.get(pid, set())
+
+# for tid in mapped_targets:
+#     dot.node(tid, target_nodes[tid]["label"], shape="box", style="filled", fillcolor="#E6F4EA")
+
+# for pid in selected_past_ids:
+#     for tid in collapsed.get(pid, []):
+#         dot.edge(pid, tid)
+
+# st.subheader("🧭 Transfer Graph (Past → Oulu)")
+# st.graphviz_chart(dot)
+
+# # ==================================================
+# # DEBUG
+# # ==================================================
+# with st.expander("🛠 Raw Notes DB"):
+#     st.json(notes_db)
 
 
 # import streamlit as st
