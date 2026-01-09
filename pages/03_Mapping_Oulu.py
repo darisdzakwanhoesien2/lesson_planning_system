@@ -11,7 +11,7 @@ import pandas as pd
 st.set_page_config(page_title="Past → Oulu Mapping with Notes", layout="wide")
 
 st.title("🎓 Past → Oulu Course Mapping (with Notes)")
-st.caption("Edit notes, descriptions, and URLs — saved permanently")
+st.caption("Edit notes, descriptions, and URLs — saved permanently. Physics: https://opas.peppi.oulu.fi/en/programme/45124?period=2025-2026. Information Science: https://opas.peppi.oulu.fi/en/offering/SA2025TOL/44975?period=2025-2026")
 
 # ==================================================
 # PATHS
