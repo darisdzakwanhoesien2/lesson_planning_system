@@ -45,16 +45,9 @@
     </details>
       📄 oulu_EE2023_oulucoursecode.json<br>
   </details>
-</details>
-  📄 direct_oulu_links.json<br>
-<details><summary>📁 old_data/</summary>
-    📄 mapping_index.json<br>
-    📄 source_courses_index.json<br>
-</details>
-<details><summary>📁 pages/</summary>
+<summary>📁 pages/</summary>
     📄 4_Transfer_Planning.py<br>
     📄 5_Global_Course_Mapping.py<br>
-    📄 5_Global_Course_Mapping_new.py<br>
     📄 6_Prerequisite_and_Readiness_Graph.py<br>
 </details>
   📄 pending_error.md<br>

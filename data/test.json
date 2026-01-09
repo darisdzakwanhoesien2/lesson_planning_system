@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "generated_at": "2024-05-22T10:00:00Z",
+    "description": "Past (Coursera) -> NUS -> University of Oulu course mappings"
+  },
+  "nodes": [
+    {
+      "id": "past_semicond_devices",
+      "type": "past",
+      "name": "Semiconductor Devices (University of Colorado Boulder)"
+    },
+    {
+      "id": "past_semicond_physics",
+      "type": "past",
+      "name": "Semiconductor Physics (University of Colorado Boulder)"
+    },
+    {
+      "id": "past_applied_ml",
+      "type": "past",
+      "name": "Applied Machine Learning in Python (University of Michigan)"
+    },
+    {
+      "id": "past_mechanics",
+      "type": "past",
+      "name": "Introduction to Mechanics (Rice University)"
+    },
+    {
+      "id": "past_electricity_mag",
+      "type": "past",
+      "name": "Introduction to Electricity and Magnetism (Rice University)"
+    },
+    {
+      "id": "past_stats",
+      "type": "past",
+      "name": "Introduction to Statistics (Stanford University)"
+    },
+    {
+      "id": "past_waves_optics",
+      "type": "past",
+      "name": "Physics of Waves and Optics (Rice University)"
+    },
+    {
+      "id": "source_pc3235b",
+      "type": "source",
+      "name": "PC3235B Applied Solid State Physics"
+    },
+    {
+      "id": "source_ee2211",
+      "type": "source",
+      "name": "EE2211 Introduction to Machine Learning"
+    },
+    {
+      "id": "source_esp2106",
+      "type": "source",
+      "name": "ESP2106 Principles of Continua"
+    },
+    {
+      "id": "source_pc2020",
+      "type": "source",
+      "name": "PC2020 Electromagnetics for Electrical Engineers"
+    },
+    {
+      "id": "source_esp2107",
+      "type": "source",
+      "name": "ESP2107 Numerical Methods and Statistics"
+    },
+    {
+      "id": "source_ee2023",
+      "type": "source",
+      "name": "EE2023 Signals and Systems"
+    },
+    {
+      "id": "target_solid_state",
+      "type": "target",
+      "name": "Solid State Physics"
+    },
+    {
+      "id": "target_comp_physics",
+      "type": "target",
+      "name": "Introduction to Computational Physics"
+    },
+    {
+      "id": "target_mech_1",
+      "type": "target",
+      "name": "Mechanics 1"
+    },
+    {
+      "id": "target_em_1",
+      "type": "target",
+      "name": "Electromagnetism 1"
+    },
+    {
+      "id": "target_regression_stats",
+      "type": "target",
+      "name": "Introduction to Regression and Analysis of Variance"
+    },
+    {
+      "id": "target_wave_motion",
+      "type": "target",
+      "name": "Wave Motion and Optics"
+    }
+  ],
+  "edges": [
+    {
+      "source": "past_semicond_devices",
+      "target": "source_pc3235b",
+      "relation": "evidence_for"
+    },
+    {
+      "source": "past_semicond_physics",
+      "target": "source_pc3235b",
+      "relation": "evidence_for"
+    },
+    {
+      "source": "source_pc3235b",
+      "target": "target_solid_state",
+      "relation": "maps_to"
+    },
+    {
+      "source": "past_applied_ml",
+      "target": "source_ee2211",
+      "relation": "evidence_for"
+    },
+    {
+      "source": "source_ee2211",
+      "target": "target_comp_physics",
+      "relation": "maps_to"
+    },
+    {
+      "source": "past_mechanics",
+      "target": "source_esp2106",
+      "relation": "evidence_for"
+    },
+    {
+      "source": "source_esp2106",
+      "target": "target_mech_1",
+      "relation": "maps_to"
+    },
+    {
+      "source": "past_electricity_mag",
+      "target": "source_pc2020",
+      "relation": "evidence_for"
+    },
+    {
+      "source": "source_pc2020",
+      "target": "target_em_1",
+      "relation": "maps_to"
+    },
+    {
+      "source": "past_stats",
+      "target": "source_esp2107",
+      "relation": "evidence_for"
+    },
+    {
+      "source": "source_esp2107",
+      "target": "target_regression_stats",
+      "relation": "maps_to"
+    },
+    {
+      "source": "past_waves_optics",
+      "target": "source_ee2023",
+      "relation": "evidence_for"
+    },
+    {
+      "source": "source_ee2023",
+      "target": "target_wave_motion",
+      "relation": "maps_to"
+    }
+  ]
+}

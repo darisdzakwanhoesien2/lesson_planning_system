@@ -1,0 +1,425 @@
+{
+  "metadata": {
+    "generated_at": "2026-01-02T16:23:31Z",
+    "description": "Past → NUS → University of Oulu course mappings"
+  },
+  "nodes": [
+    {
+      "id": "EE2023",
+      "label": "EE2023\nSignals and Systems",
+      "type": "source"
+    },
+    {
+      "id": "PAST_EE2023_Signals and Systems",
+      "label": "Signals and Systems\n(École Polytechnique Fédérale de Lausanne (EPFL))",
+      "type": "past"
+    },
+    {
+      "id": "PAST_EE2023_Discrete-Time Signal Processing",
+      "label": "Discrete-Time Signal Processing\n(École Polytechnique Fédérale de Lausanne (EPFL))",
+      "type": "past"
+    },
+    {
+      "id": "766201A_Wave_Motion_and_Optics",
+      "label": "766201A_Wave_Motion_and_Optics\nWave Motion and Optics",
+      "type": "target"
+    },
+    {
+      "id": "766202A_Electromagnetism_1",
+      "label": "766202A_Electromagnetism_1\nElectromagnetism 1",
+      "type": "target"
+    },
+    {
+      "id": "ESP2106",
+      "label": "ESP2106\nPrinciples of Continua",
+      "type": "source"
+    },
+    {
+      "id": "PAST_ESP2106_Mechanics of Materials I",
+      "label": "Mechanics of Materials I\n(Georgia Institute of Technology)",
+      "type": "past"
+    },
+    {
+      "id": "PAST_ESP2106_Introduction to Fluid Mechanics",
+      "label": "Introduction to Fluid Mechanics\n(National Research University HSE)",
+      "type": "past"
+    },
+    {
+      "id": "766102A_Mechanics_1",
+      "label": "766102A_Mechanics_1\nMechanics 1",
+      "type": "target"
+    },
+    {
+      "id": "766103A_Mechanics_2",
+      "label": "766103A_Mechanics_2\nMechanics 2",
+      "type": "target"
+    },
+    {
+      "id": "ESP2107",
+      "label": "ESP2107\nNumerical Methods and Statistics",
+      "type": "source"
+    },
+    {
+      "id": "766301A_Intro_Computational_Physics",
+      "label": "766301A_Intro_Computational_Physics\nIntroduction to Computational Physics",
+      "type": "target"
+    },
+    {
+      "id": "805305A_Regression_ANOVA",
+      "label": "805305A_Regression_ANOVA\nIntroduction to Regression and Analysis of Variance",
+      "type": "target"
+    },
+    {
+      "id": "805306A_Multivariate_Methods",
+      "label": "805306A_Multivariate_Methods\nIntroduction to Multivariate Methods (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "766101P_Mathematics_for_Physics",
+      "label": "766101P_Mathematics_for_Physics\nMathematics for Physics (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "IE2141",
+      "label": "IE2141\nSystems Thinking and Dynamics",
+      "type": "source"
+    },
+    {
+      "id": "PAST_IE2141_Model Thinking",
+      "label": "Model Thinking\n(University of Michigan)",
+      "type": "past"
+    },
+    {
+      "id": "PAST_IE2141_System Dynamics",
+      "label": "System Dynamics\n(University of Bergen)",
+      "type": "past"
+    },
+    {
+      "id": "PC2020",
+      "label": "PC2020\nElectromagnetics for Electrical Engineers",
+      "type": "source"
+    },
+    {
+      "id": "PAST_PC2020_Electromagnetics for Engineers",
+      "label": "Electromagnetics for Engineers\n(University of Colorado Boulder)",
+      "type": "past"
+    },
+    {
+      "id": "PAST_PC2020_Wireless Communications",
+      "label": "Wireless Communications\n(University of Colorado Boulder)",
+      "type": "past"
+    },
+    {
+      "id": "766203A_Electromagnetism_2",
+      "label": "766203A_Electromagnetism_2\nElectromagnetism 2",
+      "type": "target"
+    },
+    {
+      "id": "PC3235B",
+      "label": "PC3235B\nApplied Solid State Physics",
+      "type": "source"
+    },
+    {
+      "id": "PAST_PC3235B_Solid State Physics",
+      "label": "Solid State Physics\n(École Polytechnique Fédérale de Lausanne (EPFL))",
+      "type": "past"
+    },
+    {
+      "id": "PAST_PC3235B_Semiconductor Physics",
+      "label": "Semiconductor Physics\n(University of Colorado Boulder)",
+      "type": "past"
+    },
+    {
+      "id": "766305A_Solid_State_Physics",
+      "label": "766305A_Solid_State_Physics\nSolid State Physics",
+      "type": "target"
+    },
+    {
+      "id": "ES2631",
+      "label": "ES2631\nCritique and Communication of Thinking and Design",
+      "type": "source"
+    },
+    {
+      "id": "PAST_ES2631_Writing in the Sciences",
+      "label": "Writing in the Sciences\n(Stanford University)",
+      "type": "past"
+    },
+    {
+      "id": "PAST_ES2631_Technical Communication",
+      "label": "Technical Communication\n(Georgia Institute of Technology)",
+      "type": "past"
+    },
+    {
+      "id": "766999A_Being_a_Teacher_in_Mathematical_Subjects",
+      "label": "766999A_Being_a_Teacher_in_Mathematical_Subjects\nBeing a Teacher in Mathematical Subjects",
+      "type": "target"
+    },
+    {
+      "id": "ESP3201A",
+      "label": "ESP3201A\nMachine Learning in Engineering Science",
+      "type": "source"
+    },
+    {
+      "id": "PAST_ESP3201A_Machine Learning",
+      "label": "Machine Learning\n(Stanford University)",
+      "type": "past"
+    },
+    {
+      "id": "PAST_ESP3201A_Linear Algebra for Machine Learning",
+      "label": "Linear Algebra for Machine Learning\n(DeepLearning.AI)",
+      "type": "past"
+    },
+    {
+      "id": "PAST_ESP3201A_Statistics with Python",
+      "label": "Statistics with Python\n(University of Michigan)",
+      "type": "past"
+    },
+    {
+      "id": "PAST_ESP3201A_Optimization Methods in Machine Learning",
+      "label": "Optimization Methods in Machine Learning\n(University at Buffalo)",
+      "type": "past"
+    },
+    {
+      "id": "ME3142",
+      "label": "ME3142\nFeedback Control Systems",
+      "type": "source"
+    },
+    {
+      "id": "PAST_ME3142_Differential Equations for Engineers",
+      "label": "Differential Equations for Engineers\n(Hong Kong University of Science and Technology)",
+      "type": "past"
+    },
+    {
+      "id": "PAST_ME3142_Linear Systems and Control",
+      "label": "Linear Systems and Control\n(University of Colorado Boulder)",
+      "type": "past"
+    },
+    {
+      "id": "PAST_ME3142_Control of Mobile Robots",
+      "label": "Control of Mobile Robots\n(Georgia Institute of Technology)",
+      "type": "past"
+    },
+    {
+      "id": "PC2130B",
+      "label": "PC2130B\nApplied Quantum Physics",
+      "type": "source"
+    },
+    {
+      "id": "PAST_PC2130B_Quantum Mechanics for Scientists and Engineers",
+      "label": "Quantum Mechanics for Scientists and Engineers\n(Stanford University)",
+      "type": "past"
+    },
+    {
+      "id": "PAST_PC2130B_Linear Algebra for Machine Learning",
+      "label": "Linear Algebra for Machine Learning\n(DeepLearning.AI)",
+      "type": "past"
+    },
+    {
+      "id": "CDE3301C",
+      "label": "CDE3301C\nComplex Systems Design: From Mission to Prototype",
+      "type": "source"
+    },
+    {
+      "id": "PAST_CDE3301C_System Design: Designing Complex Systems",
+      "label": "System Design: Designing Complex Systems\n(University at Buffalo)",
+      "type": "past"
+    },
+    {
+      "id": "PAST_CDE3301C_Design Thinking for Innovation",
+      "label": "Design Thinking for Innovation\n(University of Virginia)",
+      "type": "past"
+    },
+    {
+      "id": "PAST_CDE3301C_Managing Project Risks and Changes",
+      "label": "Managing Project Risks and Changes\n(University of California Irvine)",
+      "type": "past"
+    }
+  ],
+  "edges": [
+    {
+      "from": "PAST_EE2023_Signals and Systems",
+      "to": "EE2023",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_EE2023_Discrete-Time Signal Processing",
+      "to": "EE2023",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "EE2023",
+      "to": "766201A_Wave_Motion_and_Optics",
+      "relation": "maps_to"
+    },
+    {
+      "from": "EE2023",
+      "to": "766202A_Electromagnetism_1",
+      "relation": "maps_to"
+    },
+    {
+      "from": "PAST_ESP2106_Mechanics of Materials I",
+      "to": "ESP2106",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_ESP2106_Introduction to Fluid Mechanics",
+      "to": "ESP2106",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "ESP2106",
+      "to": "766102A_Mechanics_1",
+      "relation": "maps_to"
+    },
+    {
+      "from": "ESP2106",
+      "to": "766103A_Mechanics_2",
+      "relation": "maps_to"
+    },
+    {
+      "from": "ESP2107",
+      "to": "766301A_Intro_Computational_Physics",
+      "relation": "maps_to"
+    },
+    {
+      "from": "ESP2107",
+      "to": "805305A_Regression_ANOVA",
+      "relation": "maps_to"
+    },
+    {
+      "from": "ESP2107",
+      "to": "805306A_Multivariate_Methods",
+      "relation": "maps_to"
+    },
+    {
+      "from": "ESP2107",
+      "to": "766101P_Mathematics_for_Physics",
+      "relation": "maps_to"
+    },
+    {
+      "from": "PAST_IE2141_Model Thinking",
+      "to": "IE2141",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_IE2141_System Dynamics",
+      "to": "IE2141",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "IE2141",
+      "to": "766301A_Intro_Computational_Physics",
+      "relation": "maps_to"
+    },
+    {
+      "from": "PAST_PC2020_Electromagnetics for Engineers",
+      "to": "PC2020",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_PC2020_Wireless Communications",
+      "to": "PC2020",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PC2020",
+      "to": "766202A_Electromagnetism_1",
+      "relation": "maps_to"
+    },
+    {
+      "from": "PC2020",
+      "to": "766203A_Electromagnetism_2",
+      "relation": "maps_to"
+    },
+    {
+      "from": "PAST_PC3235B_Solid State Physics",
+      "to": "PC3235B",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_PC3235B_Semiconductor Physics",
+      "to": "PC3235B",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PC3235B",
+      "to": "766305A_Solid_State_Physics",
+      "relation": "maps_to"
+    },
+    {
+      "from": "PAST_ES2631_Writing in the Sciences",
+      "to": "ES2631",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_ES2631_Technical Communication",
+      "to": "ES2631",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "ES2631",
+      "to": "766999A_Being_a_Teacher_in_Mathematical_Subjects",
+      "relation": "maps_to"
+    },
+    {
+      "from": "PAST_ESP3201A_Machine Learning",
+      "to": "ESP3201A",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_ESP3201A_Linear Algebra for Machine Learning",
+      "to": "ESP3201A",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_ESP3201A_Statistics with Python",
+      "to": "ESP3201A",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_ESP3201A_Optimization Methods in Machine Learning",
+      "to": "ESP3201A",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_ME3142_Differential Equations for Engineers",
+      "to": "ME3142",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_ME3142_Linear Systems and Control",
+      "to": "ME3142",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_ME3142_Control of Mobile Robots",
+      "to": "ME3142",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_PC2130B_Quantum Mechanics for Scientists and Engineers",
+      "to": "PC2130B",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_PC2130B_Linear Algebra for Machine Learning",
+      "to": "PC2130B",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_CDE3301C_System Design: Designing Complex Systems",
+      "to": "CDE3301C",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_CDE3301C_Design Thinking for Innovation",
+      "to": "CDE3301C",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "PAST_CDE3301C_Managing Project Risks and Changes",
+      "to": "CDE3301C",
+      "relation": "evidence_for"
+    }
+  ]
+}

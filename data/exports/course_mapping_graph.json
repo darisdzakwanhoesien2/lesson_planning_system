@@ -1,0 +1,717 @@
+{
+  "metadata": {
+    "generated_at": "2024-05-22T10:00:00Z",
+    "description": "Past → NUS → University of Oulu course mappings"
+  },
+  "nodes": [
+    {
+      "id": "michigan_ads_python",
+      "label": "Applied Data Science with Python Specialization (University of Michigan)",
+      "type": "past"
+    },
+    {
+      "id": "duke_logic_ct",
+      "label": "Introduction to Logic and Critical Thinking (Duke University)",
+      "type": "past"
+    },
+    {
+      "id": "uci_academic_writing",
+      "label": "Academic English: Writing Specialization (University of California, Irvine)",
+      "type": "past"
+    },
+    {
+      "id": "hkust_math_eng",
+      "label": "Mathematics for Engineers Specialization (The Hong Kong University of Science and Technology)",
+      "type": "past"
+    },
+    {
+      "id": "vanderbilt_matlab",
+      "label": "MATLAB Programming for Engineers and Scientists Specialization (Vanderbilt University)",
+      "type": "past"
+    },
+    {
+      "id": "nus_sem4_ee2211",
+      "label": "EE2211 Introduction to Machine Learning",
+      "type": "source"
+    },
+    {
+      "id": "nus_es2631",
+      "label": "ES2631 Critique and Communication of Thinking and Design",
+      "type": "source"
+    },
+    {
+      "id": "nus_sem4_esp2107",
+      "label": "ESP2107 Numerical Methods and Statistics",
+      "type": "source"
+    },
+    {
+      "id": "past_rice_mechanics",
+      "label": "Introduction to Mechanics (Rice University)",
+      "type": "past"
+    },
+    {
+      "id": "past_colorado_systems_eng",
+      "label": "Introduction to Systems Engineering (University of Colorado Boulder)",
+      "type": "past"
+    },
+    {
+      "id": "past_colorado_control",
+      "label": "Control Systems Analysis (University of Colorado Boulder)",
+      "type": "past"
+    },
+    {
+      "id": "nus_pc2020",
+      "label": "PC2020 Electromagnetics for Electrical Engineers",
+      "type": "source"
+    },
+    {
+      "id": "oulu_optional_comp_physics",
+      "label": "Introduction to Computational Physics (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_optional_solid_state",
+      "label": "Solid State Physics (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_extra_dist_systems",
+      "label": "521290S-3007 Distributed Systems (5 ECTS)",
+      "type": "target"
+    },
+
+    {
+      "id": "past_colorado_semiconductor",
+      "label": "Semiconductor Devices (University of Colorado Boulder)",
+      "type": "past"
+    },
+    {
+      "id": "past_imperial_math_ml",
+      "label": "Mathematics for Machine Learning (Imperial College London)",
+      "type": "past"
+    },
+    {
+      "id": "past_colorado_control_systems",
+      "label": "Control Systems Analysis: Modeling of Dynamic Systems (University of Colorado Boulder)",
+      "type": "past"
+    },
+    {
+      "id": "nus_sem5_esp2106",
+      "label": "ESP2106 Principles of Continua",
+      "type": "source"
+    },
+    {
+      "id": "nus_ie2141",
+      "label": "IE2141 Systems Thinking and Dynamics",
+      "type": "source"
+    },
+    {
+      "id": "nus_sem6_pc3235b",
+      "label": "PC3235B Applied Solid State Physics",
+      "type": "source"
+    },
+    {
+      "id": "nus_sem5_pc3235b",
+      "label": "ME3142 Feedback Control Systems",
+      "type": "source"
+    },
+    {
+      "id": "nus_cde3301c",
+      "label": "CDE3301C Complex Systems Design: From Mission to Prototype",
+      "type": "source"
+    },
+    {
+      "id": "oulu_core_optics",
+      "label": "Wave Motion and Optics (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_core_mechanics_1",
+      "label": "Mechanics 1 (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_core_em_1",
+      "label": "Electromagnetism 1 (5 ECTS)",
+      "type": "target"
+    },
+
+    {
+      "id": "oulu_optional_mechanics_2",
+      "label": "Mechanics 2 (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "past_hkust_math_engineers",
+      "label": "Mathematics for Engineers (The Hong Kong University of Science and Technology)",
+      "type": "past"
+    },
+    {
+      "id": "past_rice_elec_mag",
+      "label": "Introduction to Electricity and Magnetism (Rice University)",
+      "type": "past"
+    },
+    {
+      "id": "past_colorado_quantum",
+      "label": "Quantum Mechanics for Engineers (University of Colorado Boulder)",
+      "type": "past"
+    },
+    {
+      "id": "nus_sem6_ee2023",
+      "label": "EE2023 Signals and Systems",
+      "type": "source"
+    },
+    {
+      "id": "oulu_core_math_physics",
+      "label": "Mathematics for physics (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_core_em_2",
+      "label": "Electromagnetism 2 (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_core_atomic_physics",
+      "label": "Atomic physics (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "past_cu_boulder_stat_thermo",
+      "label": "Statistical Thermodynamics: Molecules to Machines (University of Colorado Boulder)",
+      "type": "past"
+    },
+    {
+      "id": "past_vanderbilt_sql_db",
+      "label": "Generative AI SQL Database Specialist with ChatGPT (Vanderbilt University)",
+      "type": "past"
+    },
+    {
+      "id": "past_duke_c_prog",
+      "label": "Introductory C Programming Specialization (Duke University)",
+      "type": "past"
+    },
+    {
+      "id": "past_vanderbilt_gen_ai_soft_eng",
+      "label": "Generative AI Software Engineering (Vanderbilt University)",
+      "type": "past"
+    },
+    {
+      "id": "past_minnesota_sdlc",
+      "label": "Software Development Lifecycle Specialization (University of Minnesota)",
+      "type": "past"
+    },
+    {
+      "id": "past_minnesota_soft_test",
+      "label": "Software Testing and Automation Specialization (University of Minnesota)",
+      "type": "past"
+    },
+    {
+      "id": "past_stanford_algorithms",
+      "label": "Algorithms Specialization (Stanford University)",
+      "type": "past"
+    },
+    {
+      "id": "past_minnesota_is",
+      "label": "Information Systems Specialization (University of Minnesota)",
+      "type": "past"
+    },
+    {
+      "id": "past_vanderbilt_strategic_leader",
+      "label": "Generative AI Strategic Leader (Vanderbilt University)",
+      "type": "past"
+    },
+    {
+      "id": "past_vanderbilt_data_analyst",
+      "label": "Generative AI Data Analyst (Vanderbilt University)",
+      "type": "past"
+    },
+    {
+      "id": "nus_me2121",
+      "label": "ME2121 Engineering Thermodynamics",
+      "type": "source"
+    },
+    {
+      "id": "nus_sem6_pc2130b",
+      "label": "PC2130B Applied Quantum Physics",
+      "type": "source"
+    },
+    {
+      "id": "nus_cs2102",
+      "label": "CS2102 Database Systems",
+      "type": "source"
+    },
+    {
+      "id": "nus_cs1010",
+      "label": "CS1010 Programming Methodology",
+      "type": "source"
+    },
+    {
+      "id": "nus_cs2103",
+      "label": "CS2103 Software Engineering",
+      "type": "source"
+    },
+    {
+      "id": "nus_cs2040",
+      "label": "CS2040 Data Structures and Algorithms",
+      "type": "source"
+    },
+    {
+      "id": "nus_is1103",
+      "label": "IS1103 Foundations of Information Systems",
+      "type": "source"
+    },
+    {
+      "id": "oulu_core_thermophysics",
+      "label": "Thermophysics (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_optional_quantum_1",
+      "label": "Quantum Mechanics I (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_optional_quantum_2",
+      "label": "Quantum Mechanics II (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_compsci_databases",
+      "label": "Databases (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_compsci_programming_2",
+      "label": "Programming 2 (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_compsci_intro_soft_eng",
+      "label": "Introduction to Software Engineering (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_compsci_req_eng",
+      "label": "Requirements Engineering (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_compsci_soft_model_design",
+      "label": "Software Modeling and Design (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_compsci_soft_quality_testing",
+      "label": "Software Quality and Testing (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_compsci_data_model_design",
+      "label": "Data Modeling and Design (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_compsci_soft_arch",
+      "label": "Software Architectures (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_compsci_dsa",
+      "label": "Data Structures and Algorithms (5 ECTS)",
+      "type": "target"
+    },
+    {
+      "id": "oulu_compsci_fund_is",
+      "label": "Fundamentals of Information Systems",
+      "type": "target"
+    },
+    {
+      "id": "oulu_compsci_is_model_design",
+      "label": "Information Systems Modelling, Design and Development",
+      "type": "target"
+    },
+    {
+      "id": "oulu_compsci_is_acquisition",
+      "label": "Information Systems Acquisition, Deployment and Management",
+      "type": "target"
+    },
+    {
+      "id": "oulu_compsci_bpm",
+      "label": "Business Process Management and Modelling",
+      "type": "target"
+    },
+    {
+      "id": "oulu_compsci_data_analytics_bi",
+      "label": "Data Analytics and Business Intelligence",
+      "type": "target"
+    }
+  ],
+  "edges": [
+    {
+      "from": "imperial_math_ml",
+      "to": "nus_sem4_ee2211",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "michigan_ads_python",
+      "to": "nus_sem4_ee2211",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "duke_logic_ct",
+      "to": "nus_es2631",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "uci_academic_writing",
+      "to": "nus_es2631",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "hkust_math_eng",
+      "to": "nus_sem4_esp2107",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "vanderbilt_matlab",
+      "to": "nus_sem4_esp2107",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_sem4_ee2211",
+      "to": "oulu_extra_dist_systems",
+      "relation": "maps_to"
+    },
+    {
+      "from": "past_hkust_math_eng",
+      "to": "nus_sem6_ee2023",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "past_rice_mechanics",
+      "to": "nus_sem5_esp2106",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "past_colorado_systems_eng",
+      "to": "nus_ie2141",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "past_rice_elec_mag",
+      "to": "nus_pc2020",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "past_colorado_semiconductor",
+      "to": "nus_sem6_pc3235b",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "imperial_math_ml",
+      "to": "nus_esp3201a",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "past_colorado_control",
+      "to": "nus_sem5_pc3235b",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_sem6_ee2023",
+      "to": "oulu_core_optics",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_sem5_esp2106",
+      "to": "oulu_core_mechanics_1",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_ie2141",
+      "to": "oulu_optional_comp_physics",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_pc2020",
+      "to": "oulu_core_em_1",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_sem6_pc3235b",
+      "to": "oulu_optional_solid_state",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_esp3201a",
+      "to": "oulu_extra_dist_systems",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_sem5_pc3235b",
+      "to": "oulu_optional_mechanics_2",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_sem6_pc2130b",
+      "to": "",
+      "relation": "maps_to"
+    },
+    {
+      "from": "past_hkust_math_engineers",
+      "to": "nus_sem6_ee2023",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "past_rice_mechanics",
+      "to": "nus_sem5_esp2106",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "past_colorado_systems_eng",
+      "to": "nus_ie2141",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "past_rice_elec_mag",
+      "to": "nus_pc2020",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "past_colorado_semiconductor",
+      "to": "nus_sem6_pc3235b",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "past_imperial_math_ml",
+      "to": "nus_esp3201a",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "past_colorado_control_systems",
+      "to": "nus_sem5_pc3235b",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "past_colorado_quantum_mech",
+      "to": "nus_sem6_pc2130b",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "past_colorado_systems_eng",
+      "to": "nus_cde3301c",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_sem6_ee2023",
+      "to": "oulu_core_optics",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_sem5_esp2106",
+      "to": "oulu_core_mechanics_1",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_ie2141",
+      "to": "oulu_optional_comp_physics",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_pc2020",
+      "to": "oulu_core_em_1",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_sem6_pc3235b",
+      "to": "oulu_optional_solid_state",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_esp3201a",
+      "to": "oulu_optional_comp_physics",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_sem5_pc3235b",
+      "to": "oulu_optional_mechanics_2",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_cde3301c",
+      "to": "oulu_optional_mechanics_2",
+      "relation": "maps_to"
+    },
+    {
+      "from": "past_hkust_math_engineers",
+      "to": "nus_sem6_ee2023",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_sem6_ee2023",
+      "to": "oulu_core_math_physics",
+      "relation": "maps_to"
+    },
+    {
+      "from": "past_rice_elec_mag",
+      "to": "nus_pc2020",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_pc2020",
+      "to": "oulu_core_em_2",
+      "relation": "maps_to"
+    },
+    {
+      "from": "past_colorado_quantum",
+      "to": "nus_sem6_pc2130b",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_sem6_pc2130b",
+      "to": "oulu_core_atomic_physics",
+      "relation": "maps_to"
+    },
+    {
+      "from": "past_cu_boulder_stat_thermo",
+      "to": "nus_me2121",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_me2121",
+      "to": "oulu_core_thermophysics",
+      "relation": "maps_to"
+    },
+    {
+      "from": "past_colorado_quantum",
+      "to": "nus_sem6_pc2130b",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_sem6_pc2130b",
+      "to": "",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_sem6_pc2130b",
+      "to": "oulu_optional_quantum_2",
+      "relation": "maps_to"
+    },
+    {
+      "from": "past_vanderbilt_sql_db",
+      "to": "nus_cs2102",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_cs2102",
+      "to": "oulu_compsci_databases",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_cs2102",
+      "to": "oulu_compsci_data_model_design",
+      "relation": "maps_to"
+    },
+    {
+      "from": "past_duke_c_prog",
+      "to": "nus_cs1010",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_cs1010",
+      "to": "oulu_compsci_programming_2",
+      "relation": "maps_to"
+    },
+    {
+      "from": "past_vanderbilt_gen_ai_soft_eng",
+      "to": "nus_cs2103",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_cs2103",
+      "to": "oulu_compsci_intro_soft_eng",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_cs2103",
+      "to": "oulu_compsci_soft_arch",
+      "relation": "maps_to"
+    },
+    {
+      "from": "past_minnesota_sdlc",
+      "to": "nus_cs2103",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_cs2103",
+      "to": "oulu_compsci_req_eng",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_cs2103",
+      "to": "oulu_compsci_soft_model_design",
+      "relation": "maps_to"
+    },
+    {
+      "from": "past_minnesota_soft_test",
+      "to": "nus_cs2103",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_cs2103",
+      "to": "oulu_compsci_soft_quality_testing",
+      "relation": "maps_to"
+    },
+    {
+      "from": "past_stanford_algorithms",
+      "to": "nus_cs2040",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_cs2040",
+      "to": "oulu_compsci_dsa",
+      "relation": "maps_to"
+    },
+    {
+      "from": "past_minnesota_is",
+      "to": "nus_is1103",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_is1103",
+      "to": "oulu_compsci_fund_is",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_is1103",
+      "to": "oulu_compsci_is_model_design",
+      "relation": "maps_to"
+    },
+    {
+      "from": "nus_is1103",
+      "to": "oulu_compsci_is_acquisition",
+      "relation": "maps_to"
+    },
+    {
+      "from": "past_vanderbilt_strategic_leader",
+      "to": "nus_is1103",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_is1103",
+      "to": "oulu_compsci_bpm",
+      "relation": "maps_to"
+    },
+    {
+      "from": "past_vanderbilt_data_analyst",
+      "to": "nus_is1103",
+      "relation": "evidence_for"
+    },
+    {
+      "from": "nus_is1103",
+      "to": "oulu_compsci_data_analytics_bi",
+      "relation": "maps_to"
+    }
+  ]
+}
